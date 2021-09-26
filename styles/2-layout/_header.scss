@@ -25,11 +25,22 @@ header {
 
             padding: 0;
             
-            
-            nav,
-            .social-quote {
-                transform: scaleY(90%)
+            .logo-toggle {
+
+                .logo {
+
+                    img {
+                        transform: scaleY(98%)
+                    }
+                }
+
+                .toggle {
+                    transform: scaleY(98%);
+                }
             }
+            
+           
+            
         }
     }
 
@@ -51,6 +62,7 @@ header {
             font-weight: 700;
 
             img {
+                transition: all .2s ease-in-out;
                 width: 50px;
                 margin: 0 10px 0 3rem;
 
@@ -246,6 +258,7 @@ header {
                         display: none;
                         border-radius: 8px;
                         min-width: 240px;
+                        background-color: #fff;
 
                         @media(max-width: 1150px) {
                             position: initial;
