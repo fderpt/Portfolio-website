@@ -1,0 +1,147 @@
+.services {
+
+    .services-container {
+        max-width: $width-container;
+        margin: 0 auto;
+
+        .services-texts {
+
+            h5 {
+                background: #e7e7fb;
+                border-radius: 8px;
+                color: #33358c;
+                padding: 0.1rem 1rem;
+                display: inline-block;
+                margin-top: 80px;
+                font-size: 1rem;
+                font-family: $primary-font;
+                font-weight: 300;
+            }
+
+            strong {
+                font-weight: bold;
+                font-family: $secondary-font;
+                font-size: 3rem;
+                display: block;
+
+            }
+
+            p {
+                color: #777d74;
+                font-family: $primary-font;
+                font-size: 1.3rem;
+                padding-bottom: 3rem;
+
+            }
+
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, min-content);
+            margin-bottom: 5rem;
+
+            .services-card {
+                @include flex-center;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 3rem 2rem;
+                border: 1px solid lightgray;
+                position: relative;
+                transition: all .4s ease-in-out;
+
+                span {
+                    display: inline-block;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    
+
+                    i {
+                        color: lightgray;
+                        font-size: 22px;
+                        transform: rotate(-45deg);
+                        transition: all .4s ease-in-out;
+                    }
+                }
+
+                i {
+                    font-size: 5rem;
+                    margin-bottom: 1.8rem;
+                    color: $clr-navlink2;
+                    transition: all .2s ease-in-out;
+
+                }
+
+                strong {
+                    font-weight: bold;
+                    font-family: $primary-font;
+                    font-size: 1.3rem;
+                    margin-bottom: 1.2rem;
+
+                }
+
+                h5 {
+                    font-family: $primary-font;
+                    font-size: 1rem;
+                    font-weight: 300;
+                }
+
+                &:nth-of-type(2) {
+                    border: none;
+                    border-bottom: 1px solid lightgray;
+                    border-top: 1px solid lightgray;
+                }
+
+                &:nth-of-type(5) {
+                    border: none;
+                    border-bottom: 1px solid lightgray;                   
+                }
+
+                &:nth-of-type(4),
+                &:nth-of-type(6) {
+                    border-top: none;                    
+                }
+
+                &:hover {
+                    background-color: #42424c;
+                    color: white;  
+                    
+                    i {
+                        color: white;
+                    }
+
+                    span {
+
+                        i {
+                            color: white;
+                            transform: rotate(315deg);
+                        }
+                        
+                    }
+                }
+
+
+            }
+
+           
+
+        }
+
+        .services-info {
+
+            .services-img {
+
+                img {
+
+                }
+
+            }
+
+            .services-features {
+
+            }
+        }
+    }
+}

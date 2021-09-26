@@ -1172,4 +1172,137 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   top: -5px;
   left: -5px;
 }
+
+.services .services-container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.services .services-container .services-texts h5 {
+  background: #e7e7fb;
+  border-radius: 8px;
+  color: #33358c;
+  padding: 0.1rem 1rem;
+  display: inline-block;
+  margin-top: 80px;
+  font-size: 1rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+}
+
+.services .services-container .services-texts strong {
+  font-weight: bold;
+  font-family: "MuseoModerno", cursive;
+  font-size: 3rem;
+  display: block;
+}
+
+.services .services-container .services-texts p {
+  color: #777d74;
+  font-family: "Jost", sans-serif;
+  font-size: 1.3rem;
+  padding-bottom: 3rem;
+}
+
+.services .services-container .services-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: (min-content)[3];
+      grid-template-rows: repeat(3, -webkit-min-content);
+      grid-template-rows: repeat(3, min-content);
+  margin-bottom: 5rem;
+}
+
+.services .services-container .services-grid .services-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 3rem 2rem;
+  border: 1px solid lightgray;
+  position: relative;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.services .services-container .services-grid .services-card span {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.services .services-container .services-grid .services-card span i {
+  color: lightgray;
+  font-size: 22px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.services .services-container .services-grid .services-card i {
+  font-size: 5rem;
+  margin-bottom: 1.8rem;
+  color: #ff9083;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.services .services-container .services-grid .services-card strong {
+  font-weight: bold;
+  font-family: "Jost", sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+}
+
+.services .services-container .services-grid .services-card h5 {
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.services .services-container .services-grid .services-card:nth-of-type(2) {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+}
+
+.services .services-container .services-grid .services-card:nth-of-type(5) {
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.services .services-container .services-grid .services-card:nth-of-type(4), .services .services-container .services-grid .services-card:nth-of-type(6) {
+  border-top: none;
+}
+
+.services .services-container .services-grid .services-card:hover {
+  background-color: #42424c;
+  color: white;
+}
+
+.services .services-container .services-grid .services-card:hover i {
+  color: white;
+}
+
+.services .services-container .services-grid .services-card:hover span i {
+  color: white;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
 /*# sourceMappingURL=main.css.map */
