@@ -1,3 +1,100 @@
 .features {
+    @include flex-center;
+    padding: 100px 1rem;  
+    
+    @media(max-width: 1215px) {
+        flex-direction: column;
+        padding: 10px 3rem;
+    }
    
+    .features-img {
+        flex: 3;
+        padding: 0 1rem;
+        border-radius: 8px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;     
+        min-height: 780px;
+
+
+        img {
+            width:100%;
+            min-height: 780px;
+            border-radius: 8px;
+            object-fit: cover;
+            align-self: center;    
+            
+            @media(max-width: 1215px) {              
+                padding: 0;
+                margin-bottom: 3rem;
+            }
+
+
+        }
+    }
+
+    .services-features {
+        flex: 6;
+        background-color: $clr-dark-background;
+        color: white; 
+        padding: 3rem 2rem;
+        border-radius: 8px;   
+        
+        h5 {
+            @include purple-texts;
+        }
+
+        strong {
+            @include strong-white;
+            display: block;
+        }
+
+        p {
+            @include paragraph;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            @media(max-width: 850px) {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+            }
+
+            .info-card {
+
+                span {
+
+                    i {
+                        width: 40px;
+                        color: #ff9083;                       
+                    }
+
+                    strong {
+                        font-size: 1.6rem;
+                        display: inline-block;
+                        transition: color .3s ease-in;
+                    }
+
+                    &:hover {
+
+                        strong {
+                            color:  #ff9083;
+                        }
+                    }
+                }
+
+                p {
+                    margin-left: 40px;
+                }
+               
+               
+            }
+        }
+    }
+
+
 }

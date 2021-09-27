@@ -3,19 +3,24 @@
     .services-container {
         max-width: $width-container;
         margin: 0 auto;
+        padding: 1rem;
+
+        @media(max-width: 1180px) {
+            max-width: 950px;
+        }
+
+        @media(max-width: 975px) {
+            max-width: 750px;
+        }
+
+        @media(max-width: 750px) {
+            max-width: 540px;
+        }
 
         .services-texts {
 
             h5 {
-                background: #e7e7fb;
-                border-radius: 8px;
-                color: #33358c;
-                padding: 0.1rem 1rem;
-                display: inline-block;
-                margin-top: 80px;
-                font-size: 1rem;
-                font-family: $primary-font;
-                font-weight: 300;
+               @include purple-texts2;
             }
 
             strong {
@@ -41,6 +46,25 @@
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: repeat(3, min-content);
             margin-bottom: 5rem;
+
+            @media(max-width: 975px) {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(4, min-content);
+                row-gap: 2rem;
+                
+            }
+
+            @media(max-width: 750px) {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, min-content);
+                gap: 2rem;
+            }
+
+            
+
+
+            
+
 
             .services-card {
                 @include flex-center;
@@ -88,20 +112,59 @@
                     font-weight: 300;
                 }
 
+                &:nth-of-type(3) {
+                    
+                    @media(max-width: 975px) {
+                        border: none;
+                        border-bottom: 1px solid lightgray;
+                        border-left: 1px solid lightgray;
+                        border-top: 1px solid lightgray;
+                    }
+                }
+
                 &:nth-of-type(2) {
                     border: none;
                     border-bottom: 1px solid lightgray;
                     border-top: 1px solid lightgray;
+
+                    @media(max-width: 975px) {
+                        border-right: 1px solid lightgray;
+
+                    }
+
+                    @media(max-width: 750px) {
+                        border: 1px solid lightgray;
+                    }
+                    
+
                 }
 
                 &:nth-of-type(5) {
                     border: none;
-                    border-bottom: 1px solid lightgray;                   
+                    border-bottom: 1px solid lightgray; 
+                    
+                    @media(max-width: 975px) {
+                        border-left: 1px solid lightgray;
+                        border-top: 1px solid lightgray;
+                    }
+
+                    @media(max-width: 750px) {
+                        border: 1px solid lightgray;
+                    }
                 }
 
                 &:nth-of-type(4),
                 &:nth-of-type(6) {
-                    border-top: none;                    
+                    border-top: none;  
+
+                    @media(max-width: 975px) {
+                        border-top: 1px solid lightgray;
+                    }
+                    
+                    
+                    @media(max-width: 750px) {
+                        border: 1px solid lightgray;
+                    }
                 }
 
                 &:hover {

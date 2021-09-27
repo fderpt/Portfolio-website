@@ -20,14 +20,7 @@
             flex-direction: column;
             
             h5 {
-                color: white;
-                background-color: #a8aaf1;
-                padding: 0.1rem 1rem;
-                border-radius: 8px;
-                font-family: $primary-font;
-                font-size: 1rem;
-                font-weight: 400;
-                margin-bottom: 1rem;    
+                @include purple-texts;   
             }
 
             strong {
