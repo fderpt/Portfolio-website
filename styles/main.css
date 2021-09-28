@@ -1534,4 +1534,308 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 .features .services-features .info-grid .info-card p {
   margin-left: 40px;
 }
+
+.philosophy {
+  margin-bottom: 100px;
+}
+
+.philosophy .philosophy-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1250px) {
+  .philosophy .philosophy-container {
+    max-width: 1100px;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 1180px) {
+  .philosophy .philosophy-container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 975px) {
+  .philosophy .philosophy-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 750px) {
+  .philosophy .philosophy-container {
+    max-width: 600px;
+  }
+}
+
+.philosophy .philosophy-container .philosophy-texts {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  padding-right: 5rem;
+}
+
+@media (max-width: 975px) {
+  .philosophy .philosophy-container .philosophy-texts {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .philosophy .philosophy-container .philosophy-texts {
+    text-align: center;
+  }
+}
+
+.philosophy .philosophy-container .philosophy-texts h5 {
+  background: #e7e7fb;
+  border-radius: 8px;
+  color: #33358c;
+  padding: 0.1rem 1rem;
+  display: inline-block;
+  margin-top: 80px;
+  font-size: 1rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+}
+
+.philosophy .philosophy-container .philosophy-texts strong {
+  font-weight: bold;
+  font-family: "MuseoModerno", cursive;
+  font-size: 4.5rem;
+  margin-bottom: 1.8rem;
+  display: block;
+  font-size: 3rem;
+  margin-top: .6rem;
+}
+
+@media (max-width: 750px) {
+  .philosophy .philosophy-container .philosophy-texts strong {
+    font-size: calc( 2.225rem + (4.5 - 2.225) * ((100vw - 20rem) / (48 - 20)));
+  }
+}
+
+@media (max-width: 750px) {
+  .philosophy .philosophy-container .philosophy-texts strong {
+    font-size: calc( 1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20)));
+  }
+}
+
+.philosophy .philosophy-container .philosophy-texts .texts-container .texts-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 75%;
+}
+
+@media (max-width: 1180px) {
+  .philosophy .philosophy-container .philosophy-texts .texts-container .texts-links {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (max-width: 750px) {
+  .philosophy .philosophy-container .philosophy-texts .texts-container .texts-links {
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.philosophy .philosophy-container .philosophy-texts .texts-container .texts-links .text-link {
+  color: #bbbbbb;
+  font-family: "Jost", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  cursor: pointer;
+  margin: 0;
+  color: #42424c;
+  border-bottom: 3px solid #f7f3f3;
+  padding: 0 1rem;
+  display: inline-block;
+  -webkit-transition: border-bottom 1.5s ease;
+  transition: border-bottom 1.5s ease;
+}
+
+@media (max-width: 1180px) {
+  .philosophy .philosophy-container .philosophy-texts .texts-container .texts-links .text-link {
+    width: 33%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 975px) {
+  .philosophy .philosophy-container .philosophy-texts .texts-container .texts-links .text-link {
+    width: 22%;
+  }
+}
+
+@media (max-width: 560px) {
+  .philosophy .philosophy-container .philosophy-texts .texts-container .texts-links .text-link {
+    width: 100%;
+  }
+}
+
+.philosophy .philosophy-container .philosophy-texts .texts-container .texts-links .text-link:hover {
+  border-bottom: 3px solid #72dfe9;
+}
+
+.philosophy .philosophy-container .philosophy-texts .texts-container .texts-links .text-link:nth-of-type(2) {
+  margin: 0 10px;
+}
+
+@media (max-width: 1180px) {
+  .philosophy .philosophy-container .philosophy-texts .texts-container .texts-links .text-link:nth-of-type(2) {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 560px) {
+  .philosophy .philosophy-container .philosophy-texts .texts-container .texts-links .text-link:nth-of-type(2) {
+    margin: 10px 0 0 0;
+  }
+}
+
+.philosophy .philosophy-container .philosophy-texts .texts-container .texts-links .text-link.active {
+  border-bottom: 3px solid #72dfe9;
+}
+
+.philosophy .philosophy-container .philosophy-texts .texts-container .philosophy-texts {
+  margin-top: 2rem;
+}
+
+.philosophy .philosophy-container .philosophy-texts .texts-container .philosophy-texts p {
+  color: #bbbbbb;
+  font-family: "Jost", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  width: 90%;
+  color: #42424c;
+  margin-bottom: 1.6rem;
+  text-align: start;
+}
+
+.philosophy .philosophy-container .philosophy-texts .texts-container .philosophy-texts:nth-of-type(2), .philosophy .philosophy-container .philosophy-texts .texts-container .philosophy-texts:nth-of-type(3) {
+  display: none;
+}
+
+.philosophy .philosophy-container .philosophy-texts .texts-container .learn-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Jost", sans-serif;
+  margin-left: .6rem;
+}
+
+@media (max-width: 975px) {
+  .philosophy .philosophy-container .philosophy-texts .texts-container .learn-more {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .philosophy .philosophy-container .philosophy-texts .texts-container .learn-more {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.philosophy .philosophy-container .philosophy-texts .texts-container .learn-more span {
+  position: relative;
+  margin-right: 15px;
+  display: inline-block;
+  z-index: 15;
+}
+
+.philosophy .philosophy-container .philosophy-texts .texts-container .learn-more span:hover {
+  color: white;
+}
+
+.philosophy .philosophy-container .philosophy-texts .texts-container .learn-more span:hover .back1 {
+  border-color: transparent;
+}
+
+.philosophy .philosophy-container .philosophy-texts .texts-container .learn-more span:hover .back2 {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.philosophy .philosophy-container .philosophy-texts .texts-container .learn-more span .back1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  z-index: -1;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.philosophy .philosophy-container .philosophy-texts .texts-container .learn-more span .back2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-38%, -38%);
+          transform: translate(-38%, -38%);
+  width: 20px;
+  height: 20px;
+  background-color: #ffb5b5;
+  border-radius: 4px;
+  z-index: -2;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.philosophy .philosophy-container .philosophy-texts .texts-container .learn-more span .back2.purple {
+  background-color: #a8aaf1;
+}
+
+.philosophy .philosophy-container .philosophy-texts .texts-container .learn-more span .back2.green {
+  background-color: #72dfe9;
+}
+
+.philosophy .philosophy-container .philosophy-img {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+.philosophy .philosophy-container .philosophy-img img {
+  max-width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
