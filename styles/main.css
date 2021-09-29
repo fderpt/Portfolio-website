@@ -1838,4 +1838,196 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 .philosophy .philosophy-container .philosophy-img img {
   max-width: 100%;
 }
+
+.pricing {
+  margin-bottom: 100px;
+}
+
+.pricing .pricing-container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .pricing .pricing-container {
+    max-width: 940px;
+  }
+}
+
+@media (max-width: 975px) {
+  .pricing .pricing-container {
+    max-width: 800px;
+  }
+}
+
+.pricing .pricing-container strong {
+  font-weight: bold;
+  font-family: "MuseoModerno", cursive;
+  font-size: 4.5rem;
+  margin-bottom: 1.8rem;
+  display: block;
+  font-size: 3rem;
+}
+
+@media (max-width: 750px) {
+  .pricing .pricing-container strong {
+    font-size: calc( 2.225rem + (4.5 - 2.225) * ((100vw - 20rem) / (48 - 20)));
+  }
+}
+
+@media (max-width: 975px) {
+  .pricing .pricing-container strong {
+    text-align: center;
+  }
+}
+
+.pricing .pricing-container .pricing-tables {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (max-width: 975px) {
+  .pricing .pricing-container .pricing-tables {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
+  }
+}
+
+.pricing .pricing-container .pricing-tables .pricing-table {
+  border: 1px solid lightgray;
+  border-radius: 11px;
+  padding: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .pricing .pricing-container .pricing-tables .pricing-table {
+    width: 30%;
+  }
+}
+
+@media (max-width: 975px) {
+  .pricing .pricing-container .pricing-tables .pricing-table {
+    width: 45%;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .pricing .pricing-container .pricing-tables .pricing-table {
+    width: 65%;
+  }
+}
+
+.pricing .pricing-container .pricing-tables .pricing-table img {
+  max-width: 100%;
+}
+
+.pricing .pricing-container .pricing-tables .pricing-table .stat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing .pricing-container .pricing-tables .pricing-table .stat span {
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+.pricing .pricing-container .pricing-tables .pricing-table .stat i {
+  color: #24c373;
+}
+
+.pricing .pricing-container .pricing-tables .pricing-table .choose-plan-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing .pricing-container .pricing-tables .pricing-table .choose-plan-button .choose-plan-btn {
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: black;
+  padding: 10px 20px 15px 15px;
+  border-radius: 25px;
+  margin-top: 2rem;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+  z-index: 5;
+}
+
+.pricing .pricing-container .pricing-tables .pricing-table .choose-plan-button .choose-plan-btn .back-1 {
+  position: absolute;
+  width: 150px;
+  height: 60px;
+  border: 2px solid black;
+  top: -5px;
+  left: -5px;
+  border-radius: 100px;
+  z-index: -2;
+}
+
+.pricing .pricing-container .pricing-tables .pricing-table .choose-plan-button .choose-plan-btn .back-2 {
+  position: absolute;
+  width: 150px;
+  height: 60px;
+  background-color: #ff9083;
+  top: 0;
+  left: 0;
+  border-radius: 100px;
+  z-index: -2;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.pricing .pricing-container .pricing-tables .pricing-table .choose-plan-button .choose-plan-btn .back-2.green {
+  background-color: #72dfe9;
+}
+
+.pricing .pricing-container .pricing-tables .pricing-table .choose-plan-button .choose-plan-btn .back-2.purple {
+  background-color: #a8aaf1;
+}
+
+.pricing .pricing-container .pricing-tables .pricing-table .choose-plan-button .choose-plan-btn:hover {
+  color: white;
+}
+
+.pricing .pricing-container .pricing-tables .pricing-table .choose-plan-button .choose-plan-btn:hover .back-2 {
+  top: -5px;
+  left: -5px;
+}
+
+.pricing .pricing-container .pricing-tables .pricing-table:nth-of-type(2) {
+  background-color: black;
+  color: white;
+}
 /*# sourceMappingURL=main.css.map */
