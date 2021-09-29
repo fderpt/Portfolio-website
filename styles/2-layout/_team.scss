@@ -1,0 +1,234 @@
+.team {
+    margin-bottom: 100px;
+
+    .team-text {
+        @include flex-center;
+        flex-direction: column;
+
+        h5 {
+            @include purple-texts2;
+            display: inline-block;
+            text-align: center;
+        }
+
+        strong {
+            @include strong-black;
+            font-size: 3rem;
+            margin-bottom: 0;
+
+            
+            @media(max-width: 750px) {
+                font-size: calc( 1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20)));
+            }
+        }
+
+        p {
+            @include paragraph;
+            color: #777d74;
+            width: 55%;
+            text-align: center;
+        }
+    }
+
+    .team-container {
+        @include flex-center;
+        justify-content: space-evenly;
+        padding: 0 1rem;
+        max-width: 100%;
+
+        @media(max-width: 1180px) {
+            flex-wrap: wrap;
+        }
+
+
+        .team-card {
+            @include flex-center;
+            flex-direction: column;
+            margin: 0 1rem;
+
+            &:nth-of-type(2),
+            &:nth-of-type(4),
+            &:nth-of-type(6) {
+                margin-top: 3rem;
+            }
+
+            @media(max-width: 1180px) {
+                width: 30%;
+            }
+
+            @media(max-width: 750px) {
+                width: 100%;
+            }
+                    
+
+            .team-img-container {
+                width: 100%;
+                position: relative;
+                transition: all .2s ease-in;
+                
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $clr-purple;
+                    opacity: 0;
+                    z-index: 2;
+                    transition: opacity .3s ease-in;
+                    border-radius: 8px;  
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -10px;
+                    left: -10px;
+                    width: 100%;
+                    height: 100%;
+                    border: 2px solid black;
+                    opacity: 0;
+                    z-index: 12;
+                    transition: all .3s ease-in;
+                    border-radius: 8px;  
+                }
+
+
+                img {
+                    width: 100%;
+                    border-radius: 8px;  
+                   
+                    
+                 
+                }
+
+                i {
+                    position: absolute;
+                    top: 50%;
+                    left:50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 1.8rem;
+                    opacity: 0;
+                    z-index: 5;
+                    transition: opacity .3s ease-in;
+                }
+            }  
+
+            strong {
+                font-family: $primary-font;
+                font-size: 1.3rem;
+                margin-top: 1rem;
+                cursor: pointer;
+            }
+
+            p {
+                @include paragraph;
+                color: #333333;
+                font-size: 1rem;
+                margin-bottom: 1.4rem;
+            }
+
+            .team-socials {
+                @include flex-center;
+                width: 100%;
+                max-width: 150px;               
+                justify-content: space-between;
+               
+               
+                
+                .twitter {
+                    display: inline-block;
+        
+                    i {
+                        font-size: 20px;
+                        text-align: center;
+                        width: 40px;
+                        height: 40px;  
+                        position: relative; 
+                        margin-top: 15px;
+        
+                        transition: all .4s ease;
+    
+                       
+        
+                        &:hover {
+                            color: white;
+        
+                            & .tw-back1 {
+                                top: -15px;
+                                left: 2px;
+                            }
+        
+                            & .tw-back2 {
+                                opacity: 0;
+                            }
+                        }
+                    }
+        
+                    .tw-back1 {
+                        height: 45px;
+                        width: 45px;
+                        background-color: $clr-purple; 
+                        position: absolute;
+                        top: -10px;
+                        left: 5px;
+                        border-radius: 50%;
+                        z-index: -2;
+                        transition: all .4s ease;
+
+                        &.orange {
+                            background-color: $clr-navlink2;
+                        }
+
+                        &.green {
+                            background-color: $clr-green;
+                        }
+                    }
+        
+                    .tw-back2 {
+                        height: 45px;
+                        width: 45px;
+                        border: 2px solid black;
+                        position: absolute;
+                        top: -15px;
+                        left: 2px;
+                        border-radius: 50%;
+                        z-index: -2;
+                        transition: all .4s ease;
+                    }
+                }      
+            }
+
+            &:hover {
+
+                .team-img-container {
+
+                    transform: translate(8px, 8px);
+
+                    &:after {
+                        opacity: .7;
+                    }
+
+                    i {
+                        opacity: 1;
+                    }
+
+                    &::before {
+                       
+                        opacity: 1;
+                    }
+
+               
+                }
+
+
+
+            }
+        }
+
+    }
+
+  
+}

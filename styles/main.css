@@ -2030,4 +2030,297 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   background-color: black;
   color: white;
 }
+
+.team {
+  margin-bottom: 100px;
+}
+
+.team .team-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.team .team-text h5 {
+  background: #e7e7fb;
+  border-radius: 8px;
+  color: #33358c;
+  padding: 0.1rem 1rem;
+  display: inline-block;
+  margin-top: 80px;
+  font-size: 1rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  display: inline-block;
+  text-align: center;
+}
+
+.team .team-text strong {
+  font-weight: bold;
+  font-family: "MuseoModerno", cursive;
+  font-size: 4.5rem;
+  margin-bottom: 1.8rem;
+  display: block;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 750px) {
+  .team .team-text strong {
+    font-size: calc( 2.225rem + (4.5 - 2.225) * ((100vw - 20rem) / (48 - 20)));
+  }
+}
+
+@media (max-width: 750px) {
+  .team .team-text strong {
+    font-size: calc( 1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20)));
+  }
+}
+
+.team .team-text p {
+  color: #bbbbbb;
+  font-family: "Jost", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  color: #777d74;
+  width: 55%;
+  text-align: center;
+}
+
+.team .team-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 1rem;
+  max-width: 100%;
+}
+
+@media (max-width: 1180px) {
+  .team .team-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.team .team-container .team-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 1rem;
+}
+
+.team .team-container .team-card:nth-of-type(2), .team .team-container .team-card:nth-of-type(4), .team .team-container .team-card:nth-of-type(6) {
+  margin-top: 3rem;
+}
+
+@media (max-width: 1180px) {
+  .team .team-container .team-card {
+    width: 30%;
+  }
+}
+
+@media (max-width: 750px) {
+  .team .team-container .team-card {
+    width: 100%;
+  }
+}
+
+.team .team-container .team-card .team-img-container {
+  width: 100%;
+  position: relative;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.team .team-container .team-card .team-img-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #a8aaf1;
+  opacity: 0;
+  z-index: 2;
+  -webkit-transition: opacity .3s ease-in;
+  transition: opacity .3s ease-in;
+  border-radius: 8px;
+}
+
+.team .team-container .team-card .team-img-container::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  opacity: 0;
+  z-index: 12;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  border-radius: 8px;
+}
+
+.team .team-container .team-card .team-img-container img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.team .team-container .team-card .team-img-container i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.8rem;
+  opacity: 0;
+  z-index: 5;
+  -webkit-transition: opacity .3s ease-in;
+  transition: opacity .3s ease-in;
+}
+
+.team .team-container .team-card strong {
+  font-family: "Jost", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.team .team-container .team-card p {
+  color: #bbbbbb;
+  font-family: "Jost", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  color: #333333;
+  font-size: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.team .team-container .team-card .team-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team .team-container .team-card .team-socials .twitter {
+  display: inline-block;
+}
+
+.team .team-container .team-card .team-socials .twitter i {
+  font-size: 20px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin-top: 15px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.team .team-container .team-card .team-socials .twitter i:hover {
+  color: white;
+}
+
+.team .team-container .team-card .team-socials .twitter i:hover .tw-back1 {
+  top: -15px;
+  left: 2px;
+}
+
+.team .team-container .team-card .team-socials .twitter i:hover .tw-back2 {
+  opacity: 0;
+}
+
+.team .team-container .team-card .team-socials .twitter .tw-back1 {
+  height: 45px;
+  width: 45px;
+  background-color: #a8aaf1;
+  position: absolute;
+  top: -10px;
+  left: 5px;
+  border-radius: 50%;
+  z-index: -2;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.team .team-container .team-card .team-socials .twitter .tw-back1.orange {
+  background-color: #ff9083;
+}
+
+.team .team-container .team-card .team-socials .twitter .tw-back1.green {
+  background-color: #72dfe9;
+}
+
+.team .team-container .team-card .team-socials .twitter .tw-back2 {
+  height: 45px;
+  width: 45px;
+  border: 2px solid black;
+  position: absolute;
+  top: -15px;
+  left: 2px;
+  border-radius: 50%;
+  z-index: -2;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.team .team-container .team-card:hover .team-img-container {
+  -webkit-transform: translate(8px, 8px);
+          transform: translate(8px, 8px);
+}
+
+.team .team-container .team-card:hover .team-img-container:after {
+  opacity: .7;
+}
+
+.team .team-container .team-card:hover .team-img-container i {
+  opacity: 1;
+}
+
+.team .team-container .team-card:hover .team-img-container::before {
+  opacity: 1;
+}
 /*# sourceMappingURL=main.css.map */
