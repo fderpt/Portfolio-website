@@ -37,10 +37,7 @@ header {
                 .toggle {
                     transform: scaleY(98%);
                 }
-            }
-            
-           
-            
+            }           
         }
     }
 
@@ -178,20 +175,15 @@ header {
 
 
     nav {
-        transition: all .2s ease-in-out;   
-        
+        transition: all .2s ease-in-out;           
 
         .nav-list {
             list-style: none;
-            @include flex-center;
-            
+            @include flex-center;            
 
             @media(max-width: 1150px) {
-                flex-direction: column;
-               
+                flex-direction: column;               
             }
-
-
 
             .nav-item {
 
@@ -223,11 +215,8 @@ header {
 
                         @media(max-width: 1150px) {
                             display: none;
-                        }
-                        
-                    }
-
-                    
+                        }                        
+                    }                    
                     
                     &:hover {
                         color: $clr-navlink2;
@@ -311,10 +300,7 @@ header {
                         .drop-list {
                             display: flex;
                         }
-
-                    }
-
-            
+                    }            
                 }
               
             }
@@ -333,118 +319,9 @@ header {
         .socials {
             @include flex-center;
 
-            .facebook {
-                display: inline-block;
-                
-                i {
-                    font-size: 20px;
-                    text-align: center;
-                    width: 40px;
-                    height: 40px;
-                    margin-right: 1.5rem; 
-                    position: relative;  
-                    transition: all .4s ease;
-                    margin-top: 15px;
-
-                    @media(max-width: 1150px) {
-                        margin-top: 0;  
-                    }
-    
-                    &:hover {
-                        color: white;
-    
-                        & .fb-back1 {
-                            top: -15px;
-                            left: 2px;
-                        }
-    
-                        & .fb-back2 {
-                            opacity: 0;
-                        }
-                    }
-                }
-    
-                .fb-back1 {
-                    height: 45px;
-                    width: 45px;
-                    background-color: #ff9083; 
-                    position: absolute;
-                    top: -10px;
-                    left: 5px;
-                    border-radius: 50%;
-                    z-index: -2;
-                    transition: all .4s ease
-                }
-    
-                .fb-back2 {
-                    height: 45px;
-                    width: 45px;
-                    border: 2px solid black;
-                    position: absolute;
-                    top: -15px;
-                    left: 2px;
-                    border-radius: 50%;
-                    z-index: -2;
-                    transition: all .4s ease
-                }
-            }
-
-            .twitter {
-                display: inline-block;
-    
-                i {
-                    font-size: 20px;
-                    text-align: center;
-                    width: 40px;
-                    height: 40px;  
-                    position: relative; 
-                    margin-top: 15px;
-    
-                    transition: all .4s ease;
-
-                    @media(max-width: 1150px) {
-                        margin-top: 0;  
-                    }
-    
-                    &:hover {
-                        color: white;
-    
-                        & .tw-back1 {
-                            top: -15px;
-                            left: 2px;
-                        }
-    
-                        & .tw-back2 {
-                            opacity: 0;
-                        }
-                    }
-                }
-    
-                .tw-back1 {
-                    height: 45px;
-                    width: 45px;
-                    background-color: #ff9083; 
-                    position: absolute;
-                    top: -10px;
-                    left: 5px;
-                    border-radius: 50%;
-                    z-index: -2;
-                    transition: all .4s ease
-                }
-    
-                .tw-back2 {
-                    height: 45px;
-                    width: 45px;
-                    border: 2px solid black;
-                    position: absolute;
-                    top: -15px;
-                    left: 2px;
-                    border-radius: 50%;
-                    z-index: -2;
-                    transition: all .4s ease
-                }
-            }
-
+            .social-icon-hover {
+              @include social-icon;
+            }       
         }
 
         .quote-button {
@@ -455,55 +332,8 @@ header {
             }
 
             .quote-btn {
-                text-decoration: none;
-                font-family: $primary-font;
-                font-size: 16px;
-                font-weight: 600;
-                color: black;
-                padding: 10px 20px 15px 15px;          
-                border-radius: 25px;
-                margin-left: 3rem;
-                position: relative;           
-                display: inline-block;
-                transition: color .3s ease-in-out;   
-
-                @media(max-width: 1150px) {
-                    margin: 20px 0;
-                }
-                
               
-    
-                .back-1 {
-                    position: absolute;
-                    width: 125px;
-                    height: 50px;
-                    border: 2px solid black;
-                    top: -5px;
-                    left: -5px;
-                    border-radius: 100px;
-                    z-index: -2;
-                }
-        
-                .back-2 {
-                    position: absolute;
-                    width: 125px;
-                    height: 50px;
-                    background-color: #72dfe9;
-                    top: 0;
-                    left: 0;
-                    border-radius: 100px;
-                    z-index: -2;
-                    transition: all .3s ease-in-out;  
-                }
-    
-                &:hover {
-                    color: white;
-    
-                    & .back-2 {
-                        top: -5px;
-                        left: -5px;
-                    }
-                }           
+                @include large-button(125px, 50px, $clr-green)
             }
         }
     }

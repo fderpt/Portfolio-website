@@ -437,11 +437,11 @@ header .menu .social-quote .socials {
           align-items: center;
 }
 
-header .menu .social-quote .socials .facebook {
+header .menu .social-quote .socials .social-icon-hover {
   display: inline-block;
 }
 
-header .menu .social-quote .socials .facebook i {
+header .menu .social-quote .socials .social-icon-hover i {
   font-size: 20px;
   text-align: center;
   width: 40px;
@@ -453,26 +453,20 @@ header .menu .social-quote .socials .facebook i {
   margin-top: 15px;
 }
 
-@media (max-width: 1150px) {
-  header .menu .social-quote .socials .facebook i {
-    margin-top: 0;
-  }
-}
-
-header .menu .social-quote .socials .facebook i:hover {
+header .menu .social-quote .socials .social-icon-hover i:hover {
   color: white;
 }
 
-header .menu .social-quote .socials .facebook i:hover .fb-back1 {
+header .menu .social-quote .socials .social-icon-hover i:hover .fb-back1 {
   top: -15px;
   left: 2px;
 }
 
-header .menu .social-quote .socials .facebook i:hover .fb-back2 {
+header .menu .social-quote .socials .social-icon-hover i:hover .fb-back2 {
   opacity: 0;
 }
 
-header .menu .social-quote .socials .facebook .fb-back1 {
+header .menu .social-quote .socials .social-icon-hover .fb-back1 {
   height: 45px;
   width: 45px;
   background-color: #ff9083;
@@ -485,67 +479,15 @@ header .menu .social-quote .socials .facebook .fb-back1 {
   transition: all .4s ease;
 }
 
-header .menu .social-quote .socials .facebook .fb-back2 {
-  height: 45px;
-  width: 45px;
-  border: 2px solid black;
-  position: absolute;
-  top: -15px;
-  left: 2px;
-  border-radius: 50%;
-  z-index: -2;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+header .menu .social-quote .socials .social-icon-hover .fb-back1.purple {
+  background-color: #a8aaf1;
 }
 
-header .menu .social-quote .socials .twitter {
-  display: inline-block;
+header .menu .social-quote .socials .social-icon-hover .fb-back1.green {
+  background-color: #72dfe9;
 }
 
-header .menu .social-quote .socials .twitter i {
-  font-size: 20px;
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  margin-top: 15px;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-}
-
-@media (max-width: 1150px) {
-  header .menu .social-quote .socials .twitter i {
-    margin-top: 0;
-  }
-}
-
-header .menu .social-quote .socials .twitter i:hover {
-  color: white;
-}
-
-header .menu .social-quote .socials .twitter i:hover .tw-back1 {
-  top: -15px;
-  left: 2px;
-}
-
-header .menu .social-quote .socials .twitter i:hover .tw-back2 {
-  opacity: 0;
-}
-
-header .menu .social-quote .socials .twitter .tw-back1 {
-  height: 45px;
-  width: 45px;
-  background-color: #ff9083;
-  position: absolute;
-  top: -10px;
-  left: 5px;
-  border-radius: 50%;
-  z-index: -2;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-}
-
-header .menu .social-quote .socials .twitter .tw-back2 {
+header .menu .social-quote .socials .social-icon-hover .fb-back2 {
   height: 45px;
   width: 45px;
   border: 2px solid black;
@@ -576,17 +518,10 @@ header .menu .social-quote .quote-button .quote-btn {
   color: black;
   padding: 10px 20px 15px 15px;
   border-radius: 25px;
-  margin-left: 3rem;
   position: relative;
   display: inline-block;
   -webkit-transition: color .3s ease-in-out;
   transition: color .3s ease-in-out;
-}
-
-@media (max-width: 1150px) {
-  header .menu .social-quote .quote-button .quote-btn {
-    margin: 20px 0;
-  }
 }
 
 header .menu .social-quote .quote-button .quote-btn .back-1 {
@@ -611,6 +546,14 @@ header .menu .social-quote .quote-button .quote-btn .back-2 {
   z-index: -2;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+
+header .menu .social-quote .quote-button .quote-btn .back-2.purple {
+  background-color: #a8aaf1;
+}
+
+header .menu .social-quote .quote-button .quote-btn .back-2.green {
+  background-color: #72dfe9;
 }
 
 header .menu .social-quote .quote-button .quote-btn:hover {
@@ -688,23 +631,21 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   font-weight: bold;
   font-family: "MuseoModerno", cursive;
   font-size: 4.5rem;
-  margin-bottom: 1.8rem;
-  display: inline-block;
+  display: block;
 }
 
 @media (max-width: 750px) {
   .hero .hero-container .hero-text strong {
-    font-size: calc( 2.225rem + (4.5 - 2.225) * ((100vw - 20rem) / (48 - 20)));
+    font-size: clamp(2rem, 2.5rem, 3rem);
   }
 }
 
 .hero .hero-container .hero-text p {
+  color: #616161;
   font-family: "Jost", sans-serif;
   font-size: 1.3rem;
-  line-height: 1.5;
-  font-weight: 300;
+  font-weight: 400;
   width: 70%;
-  margin-bottom: 2.5rem;
 }
 
 @media (max-width: 750px) {
@@ -725,12 +666,7 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   display: inline-block;
   -webkit-transition: color .3s ease-in-out;
   transition: color .3s ease-in-out;
-}
-
-@media (max-width: 975px) {
-  .hero .hero-container .hero-text .get-started-btn {
-    margin-bottom: 3rem;
-  }
+  margin-top: 3rem;
 }
 
 .hero .hero-container .hero-text .get-started-btn .back-1 {
@@ -739,7 +675,7 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   height: 60px;
   border: 2px solid black;
   top: -5px;
-  left: -15px;
+  left: -5px;
   border-radius: 100px;
   z-index: -2;
 }
@@ -750,11 +686,19 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   height: 60px;
   background-color: #ff9083;
   top: 0;
-  left: -10px;
+  left: 0;
   border-radius: 100px;
   z-index: -2;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+
+.hero .hero-container .hero-text .get-started-btn .back-2.purple {
+  background-color: #a8aaf1;
+}
+
+.hero .hero-container .hero-text .get-started-btn .back-2.green {
+  background-color: #72dfe9;
 }
 
 .hero .hero-container .hero-text .get-started-btn:hover {
@@ -763,11 +707,11 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 
 .hero .hero-container .hero-text .get-started-btn:hover .back-2 {
   top: -5px;
-  left: -15px;
+  left: -5px;
 }
 
 .what-we-do {
-  padding: 7rem 0 5rem;
+  padding: 7rem 0 5rem 0;
   background-color: #1c1c25;
 }
 
@@ -785,6 +729,12 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 @media (max-width: 975px) {
   .what-we-do .what-we-do-container {
     max-width: 720px;
+  }
+}
+
+@media (max-width: 750px) {
+  .what-we-do .what-we-do-container {
+    max-width: 600px;
   }
 }
 
@@ -821,12 +771,17 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   color: #fff;
   font-family: "MuseoModerno", cursive;
   font-size: 3rem;
-  margin-bottom: 1rem;
 }
 
-@media (max-width: 975px) {
+@media (max-width: 750px) {
   .what-we-do .what-we-do-container .what-we-do-texts strong {
-    font-size: calc( 1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20)));
+    font-size: clamp(2rem, 2.5rem, 3rem);
+  }
+}
+
+@media (max-width: 750px) {
+  .what-we-do .what-we-do-container .what-we-do-texts strong {
+    font-size: 2rem;
   }
 }
 
@@ -835,15 +790,8 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   font-family: "Jost", sans-serif;
   font-size: 1.3rem;
   font-weight: 400;
-  width: 60%;
+  width: 70%;
   text-align: center;
-  margin-bottom: 4rem;
-}
-
-@media (max-width: 705px) {
-  .what-we-do .what-we-do-container .what-we-do-texts p {
-    width: 100%;
-  }
 }
 
 .what-we-do .what-we-do-container .do-cards-container {
@@ -971,7 +919,7 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   display: -ms-flexbox;
   display: flex;
   font-weight: bold;
-  color: #e1e1e1;
+  color: white;
   cursor: pointer;
   font-size: 1rem;
   font-family: "Jost", sans-serif;
@@ -983,6 +931,10 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   margin-right: 15px;
   display: inline-block;
   z-index: 15;
+}
+
+.what-we-do .what-we-do-container .do-cards-container .do-card .learn-more span:hover {
+  color: white;
 }
 
 .what-we-do .what-we-do-container .do-cards-container .do-card .learn-more span:hover .back1 {
@@ -1017,7 +969,7 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
           transform: translate(-35%, -30%);
   width: 20px;
   height: 20px;
-  background-color: #ffb5b5;
+  background-color: #ff9083;
   border-radius: 4px;
   z-index: -2;
   -webkit-transition: all .3s ease-in-out;
@@ -1033,7 +985,6 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 }
 
 .what-we-do .what-we-do-container .consultation {
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1072,22 +1023,27 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 
 .what-we-do .what-we-do-container .consultation .consultation-texts strong {
   font-weight: bold;
+  color: #fff;
   font-family: "MuseoModerno", cursive;
   font-size: 3rem;
 }
 
-@media (max-width: 975px) {
+@media (max-width: 750px) {
   .what-we-do .what-we-do-container .consultation .consultation-texts strong {
-    font-size: calc( 1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20)));
+    font-size: clamp(2rem, 2.5rem, 3rem);
   }
 }
 
 .what-we-do .what-we-do-container .consultation .consultation-texts p {
+  color: white;
   font-family: "Jost", sans-serif;
   font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: 1rem;
 }
 
 .what-we-do .what-we-do-container .consultation .consultation-button {
+  z-index: 44;
   -webkit-box-flex: 4;
       -ms-flex: 4;
           flex: 4;
@@ -1122,23 +1078,15 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 .what-we-do .what-we-do-container .consultation .consultation-button .consultation-btn {
   text-decoration: none;
   font-family: "Jost", sans-serif;
-  font-size: 1.3rem;
+  font-size: 16px;
   font-weight: 600;
   color: white;
   padding: 10px 20px 15px 15px;
   border-radius: 25px;
-  margin-left: 3rem;
   position: relative;
   display: inline-block;
   -webkit-transition: color .3s ease-in-out;
   transition: color .3s ease-in-out;
-  z-index: 5;
-}
-
-@media (max-width: 1150px) {
-  .what-we-do .what-we-do-container .consultation .consultation-button .consultation-btn {
-    margin: 20px 20px 20px;
-  }
 }
 
 .what-we-do .what-we-do-container .consultation .consultation-button .consultation-btn .back-1 {
@@ -1163,6 +1111,14 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   z-index: -2;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+
+.what-we-do .what-we-do-container .consultation .consultation-button .consultation-btn .back-2.purple {
+  background-color: #a8aaf1;
+}
+
+.what-we-do .what-we-do-container .consultation .consultation-button .consultation-btn .back-2.green {
+  background-color: #72dfe9;
 }
 
 .what-we-do .what-we-do-container .consultation .consultation-button .consultation-btn:hover {
@@ -1204,10 +1160,10 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   color: #33358c;
   padding: 0.1rem 1rem;
   display: inline-block;
-  margin-top: 80px;
   font-size: 1rem;
   font-family: "Jost", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  margin-top: 80px;
 }
 
 .services .services-container .services-texts strong {
@@ -1217,11 +1173,18 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   display: block;
 }
 
+@media (max-width: 750px) {
+  .services .services-container .services-texts strong {
+    font-size: clamp(2rem, 2.5rem, 3rem);
+  }
+}
+
 .services .services-container .services-texts p {
   color: #777d74;
   font-family: "Jost", sans-serif;
   font-size: 1.3rem;
-  padding-bottom: 3rem;
+  font-weight: 400;
+  margin: 1rem 0;
 }
 
 .services .services-container .services-grid {
@@ -1479,22 +1442,21 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   color: #fff;
   font-family: "MuseoModerno", cursive;
   font-size: 3rem;
-  margin-bottom: 1rem;
   display: block;
 }
 
-@media (max-width: 975px) {
+@media (max-width: 750px) {
   .features .services-features strong {
-    font-size: calc( 1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20)));
+    font-size: clamp(2rem, 2.5rem, 3rem);
   }
 }
 
 .features .services-features p {
-  color: #bbbbbb;
+  color: #c8c8c8;
   font-family: "Jost", sans-serif;
   font-size: 1.3rem;
   font-weight: 400;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .features .services-features .info-grid {
@@ -1607,17 +1569,15 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   color: #33358c;
   padding: 0.1rem 1rem;
   display: inline-block;
-  margin-top: 80px;
   font-size: 1rem;
   font-family: "Jost", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .philosophy .philosophy-container .philosophy-texts strong {
   font-weight: bold;
   font-family: "MuseoModerno", cursive;
   font-size: 4.5rem;
-  margin-bottom: 1.8rem;
   display: block;
   font-size: 3rem;
   margin-top: .6rem;
@@ -1625,13 +1585,7 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 
 @media (max-width: 750px) {
   .philosophy .philosophy-container .philosophy-texts strong {
-    font-size: calc( 2.225rem + (4.5 - 2.225) * ((100vw - 20rem) / (48 - 20)));
-  }
-}
-
-@media (max-width: 750px) {
-  .philosophy .philosophy-container .philosophy-texts strong {
-    font-size: calc( 1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20)));
+    font-size: clamp(2rem, 2.5rem, 3rem);
   }
 }
 
@@ -1668,14 +1622,12 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 }
 
 .philosophy .philosophy-container .philosophy-texts .texts-container .texts-links .text-link {
-  color: #bbbbbb;
+  color: #42424c;
   font-family: "Jost", sans-serif;
   font-size: 1.3rem;
   font-weight: 400;
-  margin-bottom: 4rem;
   cursor: pointer;
   margin: 0;
-  color: #42424c;
   border-bottom: 3px solid #f7f3f3;
   padding: 0 1rem;
   display: inline-block;
@@ -1731,13 +1683,11 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 }
 
 .philosophy .philosophy-container .philosophy-texts .texts-container .philosophy-texts p {
-  color: #bbbbbb;
+  color: #42424c;
   font-family: "Jost", sans-serif;
   font-size: 1.3rem;
   font-weight: 400;
-  margin-bottom: 4rem;
   width: 90%;
-  color: #42424c;
   margin-bottom: 1.6rem;
   text-align: start;
 }
@@ -1750,25 +1700,12 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: bold;
   color: black;
   cursor: pointer;
   font-size: 1rem;
   font-family: "Jost", sans-serif;
-  margin-left: .6rem;
-}
-
-@media (max-width: 975px) {
-  .philosophy .philosophy-container .philosophy-texts .texts-container .learn-more {
-    margin-bottom: 2rem;
-  }
-}
-
-@media (max-width: 750px) {
-  .philosophy .philosophy-container .philosophy-texts .texts-container .learn-more {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  margin-top: 1rem;
 }
 
 .philosophy .philosophy-container .philosophy-texts .texts-container .learn-more span {
@@ -1810,11 +1747,11 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-38%, -38%);
-          transform: translate(-38%, -38%);
+  -webkit-transform: translate(-35%, -30%);
+          transform: translate(-35%, -30%);
   width: 20px;
   height: 20px;
-  background-color: #ffb5b5;
+  background-color: #ff9083;
   border-radius: 4px;
   z-index: -2;
   -webkit-transition: all .3s ease-in-out;
@@ -1863,15 +1800,14 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 .pricing .pricing-container strong {
   font-weight: bold;
   font-family: "MuseoModerno", cursive;
-  font-size: 4.5rem;
-  margin-bottom: 1.8rem;
-  display: block;
   font-size: 3rem;
+  display: block;
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 750px) {
   .pricing .pricing-container strong {
-    font-size: calc( 2.225rem + (4.5 - 2.225) * ((100vw - 20rem) / (48 - 20)));
+    font-size: clamp(2rem, 2.5rem, 3rem);
   }
 }
 
@@ -1972,23 +1908,22 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 .pricing .pricing-container .pricing-tables .pricing-table .choose-plan-button .choose-plan-btn {
   text-decoration: none;
   font-family: "Jost", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 600;
   color: black;
   padding: 10px 20px 15px 15px;
   border-radius: 25px;
-  margin-top: 2rem;
   position: relative;
   display: inline-block;
   -webkit-transition: color .3s ease-in-out;
   transition: color .3s ease-in-out;
-  z-index: 5;
+  margin-top: 1.5rem;
 }
 
 .pricing .pricing-container .pricing-tables .pricing-table .choose-plan-button .choose-plan-btn .back-1 {
   position: absolute;
-  width: 150px;
-  height: 60px;
+  width: 125px;
+  height: 50px;
   border: 2px solid black;
   top: -5px;
   left: -5px;
@@ -1998,8 +1933,8 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 
 .pricing .pricing-container .pricing-tables .pricing-table .choose-plan-button .choose-plan-btn .back-2 {
   position: absolute;
-  width: 150px;
-  height: 60px;
+  width: 125px;
+  height: 50px;
   background-color: #ff9083;
   top: 0;
   left: 0;
@@ -2009,12 +1944,12 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   transition: all .3s ease-in-out;
 }
 
-.pricing .pricing-container .pricing-tables .pricing-table .choose-plan-button .choose-plan-btn .back-2.green {
-  background-color: #72dfe9;
-}
-
 .pricing .pricing-container .pricing-tables .pricing-table .choose-plan-button .choose-plan-btn .back-2.purple {
   background-color: #a8aaf1;
+}
+
+.pricing .pricing-container .pricing-tables .pricing-table .choose-plan-button .choose-plan-btn .back-2.green {
+  background-color: #72dfe9;
 }
 
 .pricing .pricing-container .pricing-tables .pricing-table .choose-plan-button .choose-plan-btn:hover {
@@ -2029,6 +1964,7 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 .pricing .pricing-container .pricing-tables .pricing-table:nth-of-type(2) {
   background-color: black;
   color: white;
+  z-index: 5;
 }
 
 .team {
@@ -2057,10 +1993,9 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   color: #33358c;
   padding: 0.1rem 1rem;
   display: inline-block;
-  margin-top: 80px;
   font-size: 1rem;
   font-family: "Jost", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   display: inline-block;
   text-align: center;
 }
@@ -2068,32 +2003,27 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 .team .team-text strong {
   font-weight: bold;
   font-family: "MuseoModerno", cursive;
-  font-size: 4.5rem;
-  margin-bottom: 1.8rem;
-  display: block;
   font-size: 3rem;
-  margin-bottom: 0;
+  display: block;
 }
 
 @media (max-width: 750px) {
   .team .team-text strong {
-    font-size: calc( 2.225rem + (4.5 - 2.225) * ((100vw - 20rem) / (48 - 20)));
+    font-size: clamp(2rem, 2.5rem, 3rem);
   }
 }
 
 @media (max-width: 750px) {
   .team .team-text strong {
-    font-size: calc( 1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20)));
+    margin: 1rem 0;
   }
 }
 
 .team .team-text p {
-  color: #bbbbbb;
+  color: #777d74;
   font-family: "Jost", sans-serif;
   font-size: 1.3rem;
   font-weight: 400;
-  margin-bottom: 4rem;
-  color: #777d74;
   width: 55%;
   text-align: center;
 }
@@ -2218,12 +2148,10 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 }
 
 .team .team-container .team-card p {
-  color: #bbbbbb;
+  color: #333333;
   font-family: "Jost", sans-serif;
   font-size: 1.3rem;
   font-weight: 400;
-  margin-bottom: 4rem;
-  color: #333333;
   font-size: 1rem;
   margin-bottom: 1.4rem;
 }
@@ -2254,29 +2182,30 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   text-align: center;
   width: 40px;
   height: 40px;
+  margin-right: 1.5rem;
   position: relative;
-  margin-top: 15px;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
+  margin-top: 15px;
 }
 
 .team .team-container .team-card .team-socials .twitter i:hover {
   color: white;
 }
 
-.team .team-container .team-card .team-socials .twitter i:hover .tw-back1 {
+.team .team-container .team-card .team-socials .twitter i:hover .fb-back1 {
   top: -15px;
   left: 2px;
 }
 
-.team .team-container .team-card .team-socials .twitter i:hover .tw-back2 {
+.team .team-container .team-card .team-socials .twitter i:hover .fb-back2 {
   opacity: 0;
 }
 
-.team .team-container .team-card .team-socials .twitter .tw-back1 {
+.team .team-container .team-card .team-socials .twitter .fb-back1 {
   height: 45px;
   width: 45px;
-  background-color: #a8aaf1;
+  background-color: #ff9083;
   position: absolute;
   top: -10px;
   left: 5px;
@@ -2286,15 +2215,15 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   transition: all .4s ease;
 }
 
-.team .team-container .team-card .team-socials .twitter .tw-back1.orange {
-  background-color: #ff9083;
+.team .team-container .team-card .team-socials .twitter .fb-back1.purple {
+  background-color: #a8aaf1;
 }
 
-.team .team-container .team-card .team-socials .twitter .tw-back1.green {
+.team .team-container .team-card .team-socials .twitter .fb-back1.green {
   background-color: #72dfe9;
 }
 
-.team .team-container .team-card .team-socials .twitter .tw-back2 {
+.team .team-container .team-card .team-socials .twitter .fb-back2 {
   height: 45px;
   width: 45px;
   border: 2px solid black;
@@ -2322,5 +2251,50 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 
 .team .team-container .team-card:hover .team-img-container::before {
   opacity: 1;
+}
+
+.help .help-container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.help .help-container .help-texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.help .help-container h5 {
+  background: #e7e7fb;
+  border-radius: 8px;
+  color: #33358c;
+  padding: 0.1rem 1rem;
+  display: inline-block;
+  font-size: 1rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+
+.help .help-container strong {
+  font-weight: bold;
+  font-family: "MuseoModerno", cursive;
+  font-size: 3rem;
+  display: block;
+}
+
+@media (max-width: 750px) {
+  .help .help-container strong {
+    font-size: clamp(2rem, 2.5rem, 3rem);
+  }
 }
 /*# sourceMappingURL=main.css.map */

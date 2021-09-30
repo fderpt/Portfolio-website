@@ -1,0 +1,25 @@
+.help {
+
+    .help-container {
+
+        @include container;
+
+        .help-texts {
+            @include flex-center;
+            flex-direction: column;
+        }    
+
+        h5 {
+
+            @include purple-texts2;
+        }
+
+        strong {
+            @include strong-black(3rem);
+        }
+
+        .help-paragraph {
+            
+        }
+    }
+}

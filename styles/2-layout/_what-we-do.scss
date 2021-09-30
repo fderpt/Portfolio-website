@@ -1,11 +1,9 @@
 .what-we-do {
-    padding: 7rem 0 5rem;
-    background-color: $clr-dark-background;
-   
+    padding: 7rem 0 5rem 0;
+    background-color: $clr-dark-background;   
 
     .what-we-do-container {
-        max-width: $width-container;
-        margin: 0 auto;
+        @include container;
 
         @media(max-width: 1180px) {
             max-width: 900px;
@@ -15,39 +13,32 @@
             max-width: 720px;
         }
 
+        @media(max-width: 750px) {
+            max-width: 600px;
+        }
+
         .what-we-do-texts {
             @include flex-center;
             flex-direction: column;
             
+                        
             h5 {
-                @include purple-texts;   
+                @include purple-texts; 
+                
+               
             }
 
-            strong {
-                font-weight: bold;
-                color: #fff;
-                font-family: $secondary-font;
-                font-size: 3rem;
-                margin-bottom: 1rem;
-
-                @media(max-width: 975px) {
-                    font-size: calc( 1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20)));
-                }  
+            strong {                
+                @include strong-white(3rem);
+                @media(max-width: 750px) {
+                    font-size: 2rem;
+                }
             }
 
             p {
-                color: #bbbbbb;
-                font-family: $primary-font;
-                font-size: 1.3rem;
-                font-weight: 400;
-                width: 60%;
-                text-align: center;
-                margin-bottom: 4rem;
-
-                @media(max-width: 705px) {
-                    width: 100%;
-                }
-
+                @include paragraph(#bbbbbb);
+                width: 70%;
+                text-align: center
             }
         }
 
@@ -146,73 +137,13 @@
                 }
 
                 .learn-more {
-                    display: flex;
-                    font-weight: bold;
-                    color: #e1e1e1;
-                    cursor: pointer;
-                    font-size: 1rem;
-                    font-family: $primary-font;
-                    margin-top: 1rem;
-                   
-
-
-                    span {
-                        position: relative;
-                        margin-right: 15px;
-                        display: inline-block;
-                        z-index: 15;
-
-                        &:hover {
-
-                            .back1 {
-                                border-color: transparent;
-                            }
-
-                            .back2 {
-                                transform: translate(-50%, -50%); 
-                            }                          
-                        }                          
-                        
-                        .back1 {
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            width: 20px;
-                            height: 20px;
-                            border: 2px solid white;
-                            border-radius: 4px;
-                            z-index: -1;
-                            transition: all .3s ease-in-out;
-                        }
-
-                        .back2 {
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-35%, -30%);
-                            width: 20px;
-                            height: 20px;
-                            background-color: #ffb5b5;
-                            border-radius: 4px;
-                            z-index: -2;
-                            transition: all .3s ease-in-out;
-
-                            &.purple {
-                                background-color: #a8aaf1;
-                            }
-
-                            &.green {
-                                background-color: #72dfe9;
-                            }
-                        }
-                    }
+                 @include learn-more;
                 }
             }
         }
 
         .consultation {
-            color: white;
+           
             @include flex-center;
             margin-top: 160px;
 
@@ -230,25 +161,18 @@
                     text-align: center;
                 }
 
-
                 strong {
-                    font-weight: bold;
-                    font-family: $secondary-font;
-                    font-size: 3rem;
-
-                    @media(max-width: 975px) {
-                                 
-                        font-size: calc( 1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20)));
-                    }                    
+                    @include strong-white(3rem);                    
                 }
     
                 p {
-                    font-family: $primary-font;
-                    font-size: 1.3rem;
+                    @include paragraph(white);
+                    margin-top: 1rem;
                 }
             }
 
             .consultation-button {
+                z-index: 44;
                 flex: 4;
                 @include flex-center;
 
@@ -262,58 +186,7 @@
                 }
 
                 .consultation-btn {
-                    text-decoration: none;
-                    font-family: $primary-font;
-                    font-size: 1.3rem;
-                    font-weight: 600;
-                    color: white;
-                    padding: 10px 20px 15px 15px;          
-                    border-radius: 25px;
-                    margin-left: 3rem;
-                    position: relative;           
-                    display: inline-block;
-                    transition: color .3s ease-in-out;   
-                    z-index: 5;
-    
-                    @media(max-width: 1150px) {
-                        margin: 20px 20px 20px;
-                    }
-
-                 
-
-                    
-        
-                    .back-1 {
-                        position: absolute;
-                        width: 150px;
-                        height: 60px;
-                        border: 2px solid white;
-                        top: -5px;
-                        left: -5px;
-                        border-radius: 100px;
-                        z-index: -2;
-                    }
-            
-                    .back-2 {
-                        position: absolute;
-                        width: 150px;
-                        height: 60px;
-                        background-color: #ff9083;
-                        top: 0;
-                        left: 0;
-                        border-radius: 100px;
-                        z-index: -2;
-                        transition: all .3s ease-in-out;  
-                    }
-        
-                    &:hover {
-                        color: white;
-        
-                        & .back-2 {
-                            top: -5px;
-                            left: -5px;
-                        }
-                    }   
+                 @include large-button(150px, 60px, $clr-navlink2, white, white);
                 }
             }
 

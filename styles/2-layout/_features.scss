@@ -46,12 +46,13 @@
         }
 
         strong {
-            @include strong-white;
+            @include strong-white(3rem);
             display: block;
         }
 
         p {
-            @include paragraph;
+            @include paragraph(#c8c8c8);
+            margin-bottom: 2rem;
         }
 
         .info-grid {

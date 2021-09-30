@@ -12,19 +12,15 @@
         }
 
         strong {
-            @include strong-black;
-            font-size: 3rem;
-            margin-bottom: 0;
-
-            
+            @include strong-black(3rem);
+                        
             @media(max-width: 750px) {
-                font-size: calc( 1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20)));
+                margin: 1rem 0;              
             }
         }
 
         p {
-            @include paragraph;
-            color: #777d74;
+            @include paragraph(#777d74);
             width: 55%;
             text-align: center;
         }
@@ -124,8 +120,7 @@
             }
 
             p {
-                @include paragraph;
-                color: #333333;
+                @include paragraph(#333333);                
                 font-size: 1rem;
                 margin-bottom: 1.4rem;
             }
@@ -139,65 +134,7 @@
                
                 
                 .twitter {
-                    display: inline-block;
-        
-                    i {
-                        font-size: 20px;
-                        text-align: center;
-                        width: 40px;
-                        height: 40px;  
-                        position: relative; 
-                        margin-top: 15px;
-        
-                        transition: all .4s ease;
-    
-                       
-        
-                        &:hover {
-                            color: white;
-        
-                            & .tw-back1 {
-                                top: -15px;
-                                left: 2px;
-                            }
-        
-                            & .tw-back2 {
-                                opacity: 0;
-                            }
-                        }
-                    }
-        
-                    .tw-back1 {
-                        height: 45px;
-                        width: 45px;
-                        background-color: $clr-purple; 
-                        position: absolute;
-                        top: -10px;
-                        left: 5px;
-                        border-radius: 50%;
-                        z-index: -2;
-                        transition: all .4s ease;
-
-                        &.orange {
-                            background-color: $clr-navlink2;
-                        }
-
-                        &.green {
-                            background-color: $clr-green;
-                        }
-                    }
-        
-                    .tw-back2 {
-                        height: 45px;
-                        width: 45px;
-                        border: 2px solid black;
-                        position: absolute;
-                        top: -15px;
-                        left: 2px;
-                        border-radius: 50%;
-                        z-index: -2;
-                        transition: all .4s ease;
-                    }
+                 @include social-icon();
                 }      
             }
 

@@ -1,8 +1,7 @@
 .services {
 
     .services-container {
-        max-width: $width-container;
-        margin: 0 auto;
+        @include container;
         padding: 1rem;
 
         @media(max-width: 1180px) {
@@ -21,22 +20,17 @@
 
             h5 {
                @include purple-texts2;
+               margin-top: 80px
             }
 
             strong {
-                font-weight: bold;
-                font-family: $secondary-font;
-                font-size: 3rem;
-                display: block;
+                @include strong-black(3rem)
 
             }
 
             p {
-                color: #777d74;
-                font-family: $primary-font;
-                font-size: 1.3rem;
-                padding-bottom: 3rem;
-
+                @include paragraph(#777d74);
+                margin: 1rem 0;
             }
 
         }
