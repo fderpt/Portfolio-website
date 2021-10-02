@@ -79,10 +79,7 @@
                 .choose-plan-button {
                     @include flex-center;
 
-                    .choose-plan-btn {
-                       @include large-button;
-                       margin-top: 1.5rem;
-                    }
+                    @include button(55px, 160px, 0.8rem 1.2rem);                    
                 }
 
                 &:nth-of-type(2) {

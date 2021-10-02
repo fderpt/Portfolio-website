@@ -5,6 +5,7 @@
     .hero-container {
         @include container;
         display: flex;
+        
 
         @media(max-width: 1180px) {
             padding: 0 4rem;
@@ -33,6 +34,13 @@
             flex: 5;           
             z-index: 10;
 
+            @media(max-width: 980px) {
+                margin-bottom: 3rem;
+            }
+
+
+           
+
             h2 {
                 font-family: $primary-font;
                 font-size: 1rem;
@@ -49,20 +57,18 @@
             p {
                 @include paragraph(#616161);
                 width: 70%;
+                margin-bottom: 4rem;
 
                 @media(max-width: 750px) {
                     width: 100%;
                 }
             }
 
-            .get-started-btn {
-               @include large-button(150px, 60px);  
-               margin-top: 3rem;     
-               
-               @media(max-width: 1150px) {
-                   margin-bottom: 2rem;
-               }
-            }
+            @include button(55px, 160px, .9rem 2.2rem);  
+            
+            
+
+          
 
         }
     }

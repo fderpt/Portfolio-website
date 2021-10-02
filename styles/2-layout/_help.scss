@@ -32,6 +32,12 @@
             grid-template-rows: min-content; 
             max-width: 1280px;
             margin: 30px 0 70px 0;
+
+            @media(max-width: 975px) {
+                grid-template-columns: 1fr;
+                max-width: 720px;
+                margin: 30px auto 70px auto;
+            }
            
 
             .question-container-1,
@@ -39,7 +45,11 @@
                 @include flex-center;
                 margin-top: 40px;
                 flex-direction: column;
-                justify-content: flex-start;               
+                justify-content: flex-start;   
+                
+                @media(max-width: 975px) {
+                    margin-top: 0;
+                }
     
                .question {
                    width: 95%;                         

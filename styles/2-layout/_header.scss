@@ -318,39 +318,32 @@ header {
         }
 
         .socials {
+
             @include flex-center;
 
-            .social-icon-hover {
-              @include social-icon;
-
-              @media(max-width: 1150px) {
-                
-                &:nth-of-type(2) {
-                    margin-right: 0;
-                } 
-                
+            @include social-link(0 1rem 0 0);  
+            
+            @media(max-width: 1150px) {
+                @include social-link(.4rem);
             }
-
-
-            }       
         }
 
         .quote-button {
-            margin-right: 3rem;
+            margin: 0 3rem;
 
             @media(max-width: 1150px) {
                 margin: 0;
             }
 
-            .quote-btn {
+           
               
-                @include large-button(125px, 50px, $clr-green);
+                @include button;
 
                 @media(max-width: 1150px) {
-                    margin: 1.5rem 0;
+                    margin: 2.5rem;
                 }
                
-            }
+            
         }
     }
 }

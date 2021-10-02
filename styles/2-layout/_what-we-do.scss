@@ -134,11 +134,12 @@
                     font-weight: 400;
                     font-family: $primary-font;
                     color: #bbbbbb;
+                    margin-bottom: 1rem;
                 }
 
-                .learn-more {
+               
                  @include learn-more;
-                }
+                
             }
         }
 
@@ -167,7 +168,11 @@
     
                 p {
                     @include paragraph(white);
-                    margin-top: 1rem;
+
+                    @media(max-width: 750px) {
+                        margin-bottom: 1rem;
+                    }
+                   
                 }
             }
 
@@ -175,26 +180,22 @@
                 z-index: 44;
                 flex: 4;
                 @include flex-center;
+                justify-content: flex-end;
 
                 @media(max-width: 975px) {
                     width: 100%;
-                    justify-content: flex-end;
+                    margin-top: 2rem;
+                    
                 }
 
                 @media(max-width: 750px) {
                     justify-content: center;
                 }
 
-                .consultation-btn {
-                 @include large-button(150px, 60px, $clr-navlink2, white, white);
-
-                 @media(max-width: 1150px) {
-                    margin-top: 2rem;
-                }
-                }
-            }
-
-            
+                @include button(65px, 180px, .9rem 2.2rem, white, white, 20px);     
+                
+               
+            }            
         }
     }
 }

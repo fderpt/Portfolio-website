@@ -23,6 +23,7 @@
             @include paragraph(#777d74);
             width: 55%;
             text-align: center;
+            margin-bottom: 2rem
         }
     }
 
@@ -124,17 +125,14 @@
                 margin-bottom: 1.4rem;
             }
 
-            .team-socials {
-                @include flex-center;
+            .team-member-socials {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
                 width: 100%;
-                max-width: 150px;               
-                justify-content: space-between;
-               
-               
-                
-                .twitter {
-                 @include social-icon();
-                }      
+                max-width: 150px;
+
+                @include social-link(0, 35px, 35px);                
             }
 
             &:hover {

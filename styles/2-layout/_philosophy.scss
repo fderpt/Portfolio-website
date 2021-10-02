@@ -1,9 +1,10 @@
 .philosophy {
-    margin-bottom: 100px;
+    margin: 100px 0;
 
     .philosophy-container {
         @include container;
         @include flex-center;
+        margin: 0 auto;
 
         @media(max-width: 1250px) {
             max-width: 1100px;
@@ -40,9 +41,9 @@
             h5 {
                 @include purple-texts2;
 
-                @media(max-width: 1150px) {
-                    margin-top: 2rem;
-                }
+             
+                   
+               
             }
 
             strong {
@@ -60,7 +61,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-around;
-                    width: 75%;
+                    width: 80%;
 
                     @media(max-width: 1180px) {
                         flex-wrap: wrap;
@@ -83,6 +84,8 @@
                         padding: 0 1rem;
                         display: inline-block;
                         transition: border-bottom 1.5s ease;
+
+                        
 
                         @media(max-width: 1180px) {
                             width: 33%;
@@ -123,13 +126,17 @@
                 }
 
                 .philosophy-texts {
-                    margin-top: 2rem;                   
+                    margin: 2rem auto 0 auto;  
+                                   
 
                     p {
                         @include paragraph(#42424c);
                         width: 90%;  
                         margin-bottom: 1.6rem;                         
-                        text-align: start;                     
+                        text-align: start;  
+
+                      
+                        
                     }
 
                     &:nth-of-type(2),
@@ -140,7 +147,10 @@
                 }
 
                 .learn-more {
-                   @include learn-more($clr-navlink2, black, black, white);
+
+                    @include learn-more(black, black);
+                  
+
 
                    @media(max-width: 1150px) {
                     margin-bottom: 2rem;
