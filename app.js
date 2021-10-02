@@ -26,6 +26,8 @@ var myScrollFunc = function() {
   
   window.addEventListener("scroll", myScrollFunc);
 
+  // What we believe in texts
+
   const link1 = document.getElementById('link1')
   const link2 = document.getElementById('link2')
   const link3 = document.getElementById('link3')
@@ -65,32 +67,125 @@ var myScrollFunc = function() {
       }
   })
 
-//   text2.style.display = 'none';
-//   text3.style.display = 'none';
 
-//   link1.addEventListener("click", () => {
-//       link1.classList.add("active");
-//       link2.classList.remove("active");
-//       link3.classList.remove("active");   
-//       text1.style.display = 'block';
-//       text2.style.display = 'none';
-//       text3.style.display = 'none';
-//   })
+  // FAQ
+  const q1 = document.getElementById('q-text1');
+  const q2 = document.getElementById('q-text2');
+  const q3 = document.getElementById('q-text3');
+  const q4 = document.getElementById('q-text4');
+  const q5 = document.getElementById('q-text5');
+  const q6 = document.getElementById('q-text6');
+  const q7 = document.getElementById('q-text7');
+  const q8 = document.getElementById('q-text8');
+  const q9 = document.getElementById('q-text9');
+  const q10 = document.getElementById('q-text10');
 
-//   link2.addEventListener("click", () => {
-//     link1.classList.remove("active");
-//     link2.classList.add("active");
-//     link3.classList.remove("active");   
-//     text1.style.display = 'none';
-//     text2.style.display = 'block';
-//     text3.style.display = 'none';
-// })
+  const answer1 = document.getElementById('answer1');
+  const answer2 = document.getElementById('answer2');
+  const answer3 = document.getElementById('answer3');
+  const answer4 = document.getElementById('answer4');
+  const answer5 = document.getElementById('answer5');
+  const answer6 = document.getElementById('answer6');
+  const answer7 = document.getElementById('answer7');
+  const answer8 = document.getElementById('answer8');
+  const answer9 = document.getElementById('answer9');
+  const answer10 = document.getElementById('answer10');
 
-// link3.addEventListener("click", () => {
-//     link1.classList.remove("active");
-//     link2.classList.remove("active");
-//     link3.classList.add("active");   
-//     text1.style.display = 'none';
-//     text2.style.display = 'none';
-//     text3.style.display = 'block';
-// })
+  const icon1 = document.getElementById('icon1');
+  const icon2 = document.getElementById('icon2');
+  const icon3 = document.getElementById('icon3');
+  const icon4 = document.getElementById('icon4');
+  const icon5 = document.getElementById('icon5');
+  const icon6 = document.getElementById('icon6');
+  const icon7 = document.getElementById('icon7');
+  const icon8 = document.getElementById('icon8');
+  const icon9 = document.getElementById('icon9');
+  const icon10 = document.getElementById('icon10');
+
+  q1.addEventListener("click", () => {
+    answer1.classList.toggle("open")
+    answer2.classList.remove("open")
+    answer3.classList.remove("open")
+    answer4.classList.remove("open")
+    answer5.classList.remove("open")  
+    
+    icon1.classList.toggle("open");
+    q1.classList.toggle("open");
+  })
+
+  q2.addEventListener("click", () => {
+    answer2.classList.toggle("open")
+    answer1.classList.remove("open")
+    answer3.classList.remove("open")
+    answer4.classList.remove("open")
+    answer5.classList.remove("open")   
+    
+    icon2.classList.toggle("open");
+    q2.classList.toggle("open");
+  })
+
+  q3.addEventListener("click", () => {
+    answer3.classList.toggle("open")
+    answer1.classList.remove("open")
+    answer2.classList.remove("open")
+    answer4.classList.remove("open")
+    answer5.classList.remove("open")    
+
+    icon3.classList.toggle("open");
+    q3.classList.toggle("open");
+  })
+
+  q4.addEventListener("click", () => {
+    answer4.classList.toggle("open")
+    answer2.classList.remove("open")
+    answer3.classList.remove("open")
+    answer1.classList.remove("open")
+    answer5.classList.remove("open")   
+    
+    icon4.classList.toggle("open");
+    q4.classList.toggle("open");
+  })
+
+  q5.addEventListener("click", () => {
+    answer5.classList.toggle("open")
+    answer2.classList.remove("open")
+    answer3.classList.remove("open")
+    answer4.classList.remove("open")
+    answer1.classList.remove("open")  
+    
+    icon5.classList.toggle("open");
+    q5.classList.toggle("open");
+  })
+
+  q6.addEventListener("click", () => {
+    answer6.classList.toggle("open")    
+    icon6.classList.toggle("open");
+    q6.classList.toggle("open");
+  })
+
+  q7.addEventListener("click", () => {
+    answer7.classList.toggle("open")    
+    icon7.classList.toggle("open");
+    q7.classList.toggle("open");
+  })
+
+  q8.addEventListener("click", () => {
+    answer8.classList.toggle("open")    
+    icon8.classList.toggle("open");
+    q8.classList.toggle("open");
+  })
+
+  q9.addEventListener("click", () => {
+    answer9.classList.toggle("open")    
+    icon9.classList.toggle("open");
+    q9.classList.toggle("open");
+  })
+
+  q10.addEventListener("click", () => {
+    answer10.classList.toggle("open")    
+    icon10.classList.toggle("open");
+    q10.classList.toggle("open");
+  })
+
+
+

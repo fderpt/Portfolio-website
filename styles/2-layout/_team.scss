@@ -113,8 +113,7 @@
             }  
 
             strong {
-                font-family: $primary-font;
-                font-size: 1.3rem;
+                @include strong-title(#333333);
                 margin-top: 1rem;
                 cursor: pointer;
             }

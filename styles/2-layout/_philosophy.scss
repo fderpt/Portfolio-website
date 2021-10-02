@@ -39,6 +39,10 @@
 
             h5 {
                 @include purple-texts2;
+
+                @media(max-width: 1150px) {
+                    margin-top: 2rem;
+                }
             }
 
             strong {
@@ -137,6 +141,10 @@
 
                 .learn-more {
                    @include learn-more($clr-navlink2, black, black, white);
+
+                   @media(max-width: 1150px) {
+                    margin-bottom: 2rem;
+                }
                 }
 
            

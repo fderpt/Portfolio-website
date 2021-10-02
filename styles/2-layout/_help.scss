@@ -1,25 +1,149 @@
 .help {
+    
 
     .help-container {
 
         @include container;
+        max-width: 1280px;
 
         .help-texts {
             @include flex-center;
             flex-direction: column;
-        }    
 
-        h5 {
+            h5 {
 
-            @include purple-texts2;
+                @include purple-texts2;
+            }
+    
+            strong {
+                @include strong-black(3rem);
+            }
+    
+            .help-paragraph {
+                @include paragraph(#777d74);
+                width: 55%;
+                text-align: center;
+            }
+        }  
+
+        .question-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;     
+            grid-template-rows: min-content; 
+            max-width: 1280px;
+            margin: 30px 0 70px 0;
+           
+
+            .question-container-1,
+            .question-container-2 {
+                @include flex-center;
+                margin-top: 40px;
+                flex-direction: column;
+                justify-content: flex-start;               
+    
+               .question {
+                   width: 95%;                         
+    
+                    .question-text {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        margin-right: 2rem;
+                        background-color: rgb(247, 244, 244);
+                        padding: .7rem 1.8rem;
+                        border-radius: 20px;
+                        position: relative;
+                        border: 2px solid transparent;
+                        transition: all .2s ease-in-out;
+                        margin-bottom: .8rem;
+                        
+    
+                        &:after {
+                            content: '';
+                            width: 100%;
+                            height: 100%;
+                            margin-right: 3rem;                        
+                            background-color: $clr-green;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            display: inline-block;
+                            border-radius: 20px;
+                            opacity: 0;
+                            transition: all .2s ease-in-out;
+                        }
+    
+                        &:hover {
+                            border-color: black;
+                            background-color: transparent;
+    
+                            &:after {
+                                z-index: -3;
+                                opacity: 1;
+                                transform: translate(-48%, -30%)
+                            }
+    
+                            i {
+                                transform: rotate(-90deg);
+                            }
+                        }
+                        
+                        strong {
+                           @include strong-title(#1c1c25);
+                        }
+    
+                        i {
+                            font-size: 24px;
+                            transition: transform .2s ease-in-out;   
+                            
+                            &.open {
+                                transform: rotate(90deg); 
+
+                                
+                            }                                                 
+                        }
+                        
+                        &.open {
+
+                            &:not(:hover) {
+
+                                i {
+                                transform: rotate(180deg);
+                                }
+                            }
+
+                            &:hover {
+
+                                i {
+                                transform: rotate(90deg)
+                                }
+                            }
+
+
+                        }
+                    }
+    
+                    .answer {
+                        @include paragraph(#333333);
+                        margin-right: 2rem;
+                        width: 85%;
+                        margin: 0 auto;                    
+                        max-height: 0;
+                        overflow: hidden;
+                        margin-bottom: .7rem;
+                        transition: all .4s ease-out;
+    
+                        &.open {
+                            max-height: 500px;
+                        }
+                    }            
+               }
+            }  
+
+           
         }
-
-        strong {
-            @include strong-black(3rem);
-        }
-
-        .help-paragraph {
-            
-        }
+        
+      
     }
 }

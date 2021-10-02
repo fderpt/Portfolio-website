@@ -500,6 +500,12 @@ header .menu .social-quote .socials .social-icon-hover .fb-back2 {
   transition: all .4s ease;
 }
 
+@media (max-width: 1150px) {
+  header .menu .social-quote .socials .social-icon-hover:nth-of-type(2) {
+    margin-right: 0;
+  }
+}
+
 header .menu .social-quote .quote-button {
   margin-right: 3rem;
 }
@@ -563,6 +569,12 @@ header .menu .social-quote .quote-button .quote-btn:hover {
 header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   top: -5px;
   left: -5px;
+}
+
+@media (max-width: 1150px) {
+  header .menu .social-quote .quote-button .quote-btn {
+    margin: 1.5rem 0;
+  }
 }
 
 .hero {
@@ -708,6 +720,12 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 .hero .hero-container .hero-text .get-started-btn:hover .back-2 {
   top: -5px;
   left: -5px;
+}
+
+@media (max-width: 1150px) {
+  .hero .hero-container .hero-text .get-started-btn {
+    margin-bottom: 2rem;
+  }
 }
 
 .what-we-do {
@@ -1128,6 +1146,12 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 .what-we-do .what-we-do-container .consultation .consultation-button .consultation-btn:hover .back-2 {
   top: -5px;
   left: -5px;
+}
+
+@media (max-width: 1150px) {
+  .what-we-do .what-we-do-container .consultation .consultation-button .consultation-btn {
+    margin-top: 2rem;
+  }
 }
 
 .services .services-container {
@@ -1574,6 +1598,12 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   font-weight: 400;
 }
 
+@media (max-width: 1150px) {
+  .philosophy .philosophy-container .philosophy-texts h5 {
+    margin-top: 2rem;
+  }
+}
+
 .philosophy .philosophy-container .philosophy-texts strong {
   font-weight: bold;
   font-family: "MuseoModerno", cursive;
@@ -1764,6 +1794,12 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 
 .philosophy .philosophy-container .philosophy-texts .texts-container .learn-more span .back2.green {
   background-color: #72dfe9;
+}
+
+@media (max-width: 1150px) {
+  .philosophy .philosophy-container .philosophy-texts .texts-container .learn-more {
+    margin-bottom: 2rem;
+  }
 }
 
 .philosophy .philosophy-container .philosophy-img {
@@ -2141,8 +2177,11 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 }
 
 .team .team-container .team-card strong {
-  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  color: #333333;
   font-size: 1.3rem;
+  line-height: 1.5;
+  font-family: "Jost", sans-serif;
   margin-top: 1rem;
   cursor: pointer;
 }
@@ -2256,6 +2295,7 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 .help .help-container {
   max-width: 1160px;
   margin: 0 auto;
+  max-width: 1280px;
 }
 
 .help .help-container .help-texts {
@@ -2274,7 +2314,7 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
           flex-direction: column;
 }
 
-.help .help-container h5 {
+.help .help-container .help-texts h5 {
   background: #e7e7fb;
   border-radius: 8px;
   color: #33358c;
@@ -2285,7 +2325,7 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
   font-weight: 400;
 }
 
-.help .help-container strong {
+.help .help-container .help-texts strong {
   font-weight: bold;
   font-family: "MuseoModerno", cursive;
   font-size: 3rem;
@@ -2293,8 +2333,178 @@ header .menu .social-quote .quote-button .quote-btn:hover .back-2 {
 }
 
 @media (max-width: 750px) {
-  .help .help-container strong {
+  .help .help-container .help-texts strong {
     font-size: clamp(2rem, 2.5rem, 3rem);
   }
+}
+
+.help .help-container .help-texts .help-paragraph {
+  color: #777d74;
+  font-family: "Jost", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  width: 55%;
+  text-align: center;
+}
+
+.help .help-container .question-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: min-content;
+      grid-template-rows: -webkit-min-content;
+      grid-template-rows: min-content;
+  max-width: 1280px;
+  margin: 30px 0 70px 0;
+}
+
+.help .help-container .question-container .question-container-1,
+.help .help-container .question-container .question-container-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.help .help-container .question-container .question-container-1 .question,
+.help .help-container .question-container .question-container-2 .question {
+  width: 95%;
+}
+
+.help .help-container .question-container .question-container-1 .question .question-text,
+.help .help-container .question-container .question-container-2 .question .question-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-right: 2rem;
+  background-color: #f7f4f4;
+  padding: .7rem 1.8rem;
+  border-radius: 20px;
+  position: relative;
+  border: 2px solid transparent;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  margin-bottom: .8rem;
+}
+
+.help .help-container .question-container .question-container-1 .question .question-text:after,
+.help .help-container .question-container .question-container-2 .question .question-text:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  margin-right: 3rem;
+  background-color: #72dfe9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: inline-block;
+  border-radius: 20px;
+  opacity: 0;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.help .help-container .question-container .question-container-1 .question .question-text:hover,
+.help .help-container .question-container .question-container-2 .question .question-text:hover {
+  border-color: black;
+  background-color: transparent;
+}
+
+.help .help-container .question-container .question-container-1 .question .question-text:hover:after,
+.help .help-container .question-container .question-container-2 .question .question-text:hover:after {
+  z-index: -3;
+  opacity: 1;
+  -webkit-transform: translate(-48%, -30%);
+          transform: translate(-48%, -30%);
+}
+
+.help .help-container .question-container .question-container-1 .question .question-text:hover i,
+.help .help-container .question-container .question-container-2 .question .question-text:hover i {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.help .help-container .question-container .question-container-1 .question .question-text strong,
+.help .help-container .question-container .question-container-2 .question .question-text strong {
+  font-weight: bold;
+  color: #1c1c25;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-family: "Jost", sans-serif;
+}
+
+.help .help-container .question-container .question-container-1 .question .question-text i,
+.help .help-container .question-container .question-container-2 .question .question-text i {
+  font-size: 24px;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.help .help-container .question-container .question-container-1 .question .question-text i.open,
+.help .help-container .question-container .question-container-2 .question .question-text i.open {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.help .help-container .question-container .question-container-1 .question .question-text.open:not(:hover) i,
+.help .help-container .question-container .question-container-2 .question .question-text.open:not(:hover) i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.help .help-container .question-container .question-container-1 .question .question-text.open:hover i,
+.help .help-container .question-container .question-container-2 .question .question-text.open:hover i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.help .help-container .question-container .question-container-1 .question .answer,
+.help .help-container .question-container .question-container-2 .question .answer {
+  color: #333333;
+  font-family: "Jost", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-right: 2rem;
+  width: 85%;
+  margin: 0 auto;
+  max-height: 0;
+  overflow: hidden;
+  margin-bottom: .7rem;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.help .help-container .question-container .question-container-1 .question .answer.open,
+.help .help-container .question-container .question-container-2 .question .answer.open {
+  max-height: 500px;
+}
+
+.contact {
+  background-color: wheat;
+  height: 120vh;
 }
 /*# sourceMappingURL=main.css.map */

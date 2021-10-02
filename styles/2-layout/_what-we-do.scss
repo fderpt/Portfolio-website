@@ -187,6 +187,10 @@
 
                 .consultation-btn {
                  @include large-button(150px, 60px, $clr-navlink2, white, white);
+
+                 @media(max-width: 1150px) {
+                    margin-top: 2rem;
+                }
                 }
             }
 

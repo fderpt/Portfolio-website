@@ -237,3 +237,11 @@
         }
     }
 }
+
+@mixin strong-title($color) {
+    font-weight: bold;
+    color: $color;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-family: $primary-font;
+}
