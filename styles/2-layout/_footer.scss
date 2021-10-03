@@ -1,0 +1,127 @@
+footer {
+    background-color: $clr-dark-background;
+    padding-top: 100px;
+    color: white;
+
+    .footer-container {
+        @include flex-container;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 70px;
+            margin-bottom: 1.4rem;            
+        }
+
+        strong {
+            @include strong-white(1.6rem);
+            margin-bottom: 3rem;
+        }
+
+        .footer-contact {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            align-items: center;
+
+            @media(max-width: 975px) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+
+            .contact-card {
+                display: flex;
+                align-items: center;
+
+               @include social-link(1rem, 55px, 55px, white, white, 1.1);
+
+
+               @media(max-width: 975px) {
+                flex-direction: column;
+                width: 35%;
+                margin: .8rem;
+            }
+
+            @media(max-width: 975px) {
+                width: 100%;
+                margin: .8rem;
+            }
+
+
+                
+
+                .contact-card-text {
+                    @include paragraph(white);
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        .footer-socials {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            max-width: 230px;
+            margin-bottom: 90px;
+
+            i {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                border: 1px solid #777d74;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                transition: background-color .2s ease-out;
+
+                &:hover {
+                    background-color: $clr-green;
+                }
+            }
+        }
+
+        .footer-nav {
+            margin-bottom: 2rem;
+
+            nav {
+
+                .footer-navlist {
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    @media(max-width: 750px) {
+                        flex-direction: column;
+                    }
+
+                    li {
+
+                        a {
+                            @include paragraph(white);
+                            text-decoration: none;
+                            margin: 0 1.4rem;
+
+                            &:hover {
+                                color: $clr-navlink2;
+                            }
+
+                            @media(max-width: 750px) {
+                                display: inline-block;
+                                padding-top: .8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-copyright {
+            @include paragraph(#c8c8c8, 1rem);          
+            margin-bottom: 3rem;
+        }
+    }
+}

@@ -54,10 +54,10 @@
     }
 }
 
-@mixin paragraph($color: black) {
+@mixin paragraph($color: black, $font-size: 1.3rem) {
     color: $color;
     font-family: $primary-font;
-    font-size: 1.3rem;
+    font-size: $font-size;
     font-weight: 400;       
 }
 
@@ -70,18 +70,18 @@
     font-family: $primary-font;
 }
 
-@mixin social-link($margin: 0, $width: 45px, $height: 45px) {
+@mixin social-link($margin: 0, $width: 45px, $height: 45px, $color: black, $outline-color: black, $scale: 1) {
     a {
         margin: $margin;
         text-decoration: none;
 
         i {
-            color: black;
+            color: $color;
             border-radius: 50%;
             font-size: 18px;               
             width: $width;
             height: $height;
-            outline: 2px solid black;
+            outline: 2px solid $outline-color;
             transition: all .8s;
             @include flex-center;
             position: relative;
@@ -99,7 +99,7 @@
                 top: 12%;
                 left: 12%;
                 transition: all .8s;
-                transform: scale(1.1);                   
+                transform: scale($scale);                   
             }
 
             &.purple {
