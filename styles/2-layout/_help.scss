@@ -17,6 +17,10 @@
     
             strong {
                 @include strong-black(3rem);
+
+                @media(max-width: 565px) {
+                    text-align: center;
+                }
             }
     
             .help-paragraph {
@@ -66,7 +70,10 @@
                         border: 2px solid transparent;
                         transition: all .2s ease-in-out;
                         margin-bottom: .8rem;
-                        
+
+                        @media(max-width: 975px) {
+                            margin-right: 0;
+                        }                        
     
                         &:after {
                             content: '';

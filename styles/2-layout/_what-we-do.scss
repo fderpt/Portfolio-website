@@ -3,19 +3,8 @@
     background-color: $clr-dark-background;   
 
     .what-we-do-container {
-        @include container;
-
-        @media(max-width: 1180px) {
-            max-width: 900px;
-        }
-
-        @media(max-width: 975px) {
-            max-width: 720px;
-        }
-
-        @media(max-width: 750px) {
-            max-width: 600px;
-        }
+        @include flex-container;
+        flex-direction: column;     
 
         .what-we-do-texts {
             @include flex-center;
@@ -23,9 +12,7 @@
             
                         
             h5 {
-                @include purple-texts; 
-                
-               
+                @include purple-texts;               
             }
 
             strong {                

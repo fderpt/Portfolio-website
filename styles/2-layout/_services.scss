@@ -1,22 +1,11 @@
 .services {
 
     .services-container {
-        @include container;
-        padding: 1rem;
+        @include flex-container;
+        flex-direction: column;
+        padding: 1rem;       
 
-        @media(max-width: 1180px) {
-            max-width: 950px;
-        }
-
-        @media(max-width: 975px) {
-            max-width: 750px;
-        }
-
-        @media(max-width: 750px) {
-            max-width: 540px;
-        }
-
-        .services-texts {
+        .services-texts {            
 
             h5 {
                @include purple-texts2;
@@ -31,6 +20,10 @@
             p {
                 @include paragraph(#777d74);
                 margin: 1rem 0;
+            }
+
+            @media(max-width: 750px) {
+                text-align: center;
             }
 
         }
