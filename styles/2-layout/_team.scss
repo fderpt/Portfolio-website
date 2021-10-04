@@ -36,7 +36,6 @@
             flex-wrap: wrap;
         }
 
-
         .team-card {
             @include flex-center;
             flex-direction: column;
@@ -53,9 +52,7 @@
 
                 @media(max-width: 735px) {
                     margin-top: 0;
-                }
-
-                
+                }                
             }
 
             @media(max-width: 1180px) {
@@ -64,14 +61,12 @@
 
             @media(max-width: 750px) {
                 width: 100%;
-            }
-                    
+            }                    
 
             .team-img-container {
                 width: 100%;
                 position: relative;
-                transition: all .2s ease-in;
-                
+                transition: all .2s ease-in;                
 
                 &::after {
                     content: '';
@@ -101,13 +96,9 @@
                     border-radius: 8px;  
                 }
 
-
                 img {
                     width: 100%;
-                    border-radius: 8px;  
-                   
-                    
-                 
+                    border-radius: 8px;                 
                 }
 
                 i {
@@ -161,17 +152,9 @@
                     &::before {
                        
                         opacity: 1;
-                    }
-
-               
+                    }               
                 }
-
-
-
             }
         }
-
-    }
-
-  
+    }  
 }

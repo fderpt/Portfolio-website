@@ -14,7 +14,6 @@
 
             strong {
                 @include strong-black(3rem)
-
             }
 
             p {
@@ -47,12 +46,6 @@
                 gap: 2rem;
             }
 
-            
-
-
-            
-
-
             .services-card {
                 @include flex-center;
                 flex-direction: column;
@@ -66,8 +59,7 @@
                     display: inline-block;
                     position: absolute;
                     top: 10px;
-                    right: 10px;
-                    
+                    right: 10px;                    
 
                     i {
                         color: lightgray;
@@ -82,7 +74,6 @@
                     margin-bottom: 1.8rem;
                     color: $clr-navlink2;
                     transition: all .2s ease-in-out;
-
                 }
 
                 strong {
@@ -90,7 +81,6 @@
                     font-family: $primary-font;
                     font-size: 1.3rem;
                     margin-bottom: 1.2rem;
-
                 }
 
                 h5 {
@@ -122,8 +112,6 @@
                     @media(max-width: 750px) {
                         border: 1px solid lightgray;
                     }
-                    
-
                 }
 
                 &:nth-of-type(5) {

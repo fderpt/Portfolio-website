@@ -8,8 +8,7 @@
 
         .what-we-do-texts {
             @include flex-center;
-            flex-direction: column;
-            
+            flex-direction: column;            
                         
             h5 {
                 @include purple-texts;               
@@ -64,7 +63,6 @@
                     i {
                         color: #72dfe9;
                     }
-
                     
                 &:hover {
                     background: #42424c;
@@ -80,7 +78,6 @@
                     i {
                         color: #a8aaf1;
                     }
-
                     
                 &:hover {
                     background: #42424c;
@@ -103,9 +100,7 @@
                     font-size: 1.3rem;
                     text-align: center;
                     margin-bottom: 1.2rem;
-                    transition: color .3s ease-in-out;
-
-                    
+                    transition: color .3s ease-in-out;                    
                 }
 
                 &:hover {
@@ -123,15 +118,12 @@
                     color: #bbbbbb;
                     margin-bottom: 1rem;
                 }
-
                
-                 @include learn-more;
-                
+                 @include learn-more;                
             }
         }
 
-        .consultation {
-           
+        .consultation {           
             @include flex-center;
             margin-top: 160px;
 
@@ -171,17 +163,14 @@
 
                 @media(max-width: 975px) {
                     width: 100%;
-                    margin-top: 2rem;
-                    
+                    margin-top: 2rem;                    
                 }
 
                 @media(max-width: 750px) {
                     justify-content: center;
                 }
 
-                @include button(65px, 180px, .9rem 2.2rem, white, white, 20px);     
-                
-               
+                @include button(65px, 180px, .9rem 2.2rem, white, white, 20px);                
             }            
         }
     }

@@ -1,5 +1,4 @@
-.help {
-    
+.help {    
 
     .help-container {
 
@@ -41,8 +40,7 @@
                 grid-template-columns: 1fr;
                 max-width: 720px;
                 margin: 30px auto 70px auto;
-            }
-           
+            }           
 
             .question-container-1,
             .question-container-2 {
@@ -115,9 +113,7 @@
                             transition: transform .2s ease-in-out;   
                             
                             &.open {
-                                transform: rotate(90deg); 
-
-                                
+                                transform: rotate(90deg);                                 
                             }                                                 
                         }
                         
@@ -136,8 +132,6 @@
                                 transform: rotate(90deg)
                                 }
                             }
-
-
                         }
                     }
     
@@ -156,11 +150,7 @@
                         }
                     }            
                }
-            }  
-
-           
-        }
-        
-      
+            }           
+        }      
     }
 }

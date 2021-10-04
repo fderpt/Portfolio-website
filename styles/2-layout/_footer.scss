@@ -30,13 +30,11 @@ footer {
                 justify-content: center;
             }
 
-
             .contact-card {
                 display: flex;
                 align-items: center;
 
                @include social-link(1rem, 55px, 55px, white, white, 1.1);
-
 
                @media(max-width: 975px) {
                 flex-direction: column;
@@ -44,14 +42,10 @@ footer {
                 margin: .8rem;
             }
 
-            @media(max-width: 975px) {
+            @media(max-width: 750px) {
                 width: 100%;
                 margin: .8rem;
             }
-
-
-                
-
                 .contact-card-text {
                     @include paragraph(white);
                     margin-left: 1rem;

@@ -248,9 +248,7 @@
                     &:after {
                         background-color: $clr-green;
                     }
-                }
-
-                 
+                }                 
 
                 }
 
@@ -259,8 +257,7 @@
                     font-size: 1rem;
                     font-family: $primary-font;
                 }
-            }
-        
+            }        
     }
 }
 
@@ -327,4 +324,33 @@
             }
         }
     }       
+}
+
+@mixin hover-link($left: 50%, $top: 40px, $translateX: 0, $top2: 65px, $left2: 50%, $max-width: 1150px) {
+    &::after {
+        content: '';
+        background-color: $clr-navlink2;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        left: $left;
+        top: $top;
+        opacity: 0;
+        transition: all .4s ease;
+
+        @media(max-width: $max-width) {
+            display: none;
+        }                        
+    }                    
+    
+    &:hover {
+        color: $clr-navlink2;
+        transform: translateX($translateX);
+
+        &::after {
+            top: $top2;
+            left: $left2;
+            opacity: 1;
+        }
+    }
 }

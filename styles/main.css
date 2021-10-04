@@ -298,10 +298,13 @@ header .menu nav .nav-list .nav-item .nav-link::after {
 
 header .menu nav .nav-list .nav-item .nav-link:hover {
   color: #ff9083;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 header .menu nav .nav-list .nav-item .nav-link:hover::after {
   top: 65px;
+  left: 50%;
   opacity: 1;
 }
 
@@ -384,6 +387,12 @@ header .menu nav .nav-list .nav-item.drop-down .drop-list .drop-nav-item .drop-n
   transition: all .4s ease;
 }
 
+@media (max-width: 0px) {
+  header .menu nav .nav-list .nav-item.drop-down .drop-list .drop-nav-item .drop-nav-link::after {
+    display: none;
+  }
+}
+
 header .menu nav .nav-list .nav-item.drop-down .drop-list .drop-nav-item .drop-nav-link:hover {
   color: #ff9083;
   -webkit-transform: translateX(15px);
@@ -391,6 +400,7 @@ header .menu nav .nav-list .nav-item.drop-down .drop-list .drop-nav-item .drop-n
 }
 
 header .menu nav .nav-list .nav-item.drop-down .drop-list .drop-nav-item .drop-nav-link:hover::after {
+  top: 10px;
   left: -25px;
   opacity: 1;
 }
@@ -2839,7 +2849,7 @@ footer .footer-container .footer-contact .contact-card a:hover i::after {
   }
 }
 
-@media (max-width: 975px) {
+@media (max-width: 750px) {
   footer .footer-container .footer-contact .contact-card {
     width: 100%;
     margin: .8rem;

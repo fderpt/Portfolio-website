@@ -39,8 +39,7 @@
             }
 
             strong {
-              @include strong-black;
-                
+              @include strong-black;                
             }
 
             p {
@@ -55,6 +54,5 @@
 
             @include button(55px, 160px, .9rem 2.2rem);  
         }
-    }
-    
+    }    
 }
