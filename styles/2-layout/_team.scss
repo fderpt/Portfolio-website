@@ -1,4 +1,7 @@
 .team {
+
+    //  Full length section
+
     margin-bottom: 100px;
 
     .team-text {
@@ -45,9 +48,8 @@
                 margin-bottom: 1.5rem;
             }
 
-            &:nth-of-type(2),
-            &:nth-of-type(4),
-            &:nth-of-type(6) {
+            // Add margin top to cards 2,4 & 6
+            &:nth-child(even) {
                 margin-top: 3rem;
 
                 @media(max-width: 735px) {
@@ -55,11 +57,13 @@
                 }                
             }
 
+            // Wrap items to 2 lines
             @media(max-width: 1180px) {
-                width: 30%;
+                width: 30%;               
             }
 
-            @media(max-width: 750px) {
+            // Full width items
+            @media(max-width: 750px) {               
                 width: 100%;
             }                    
 

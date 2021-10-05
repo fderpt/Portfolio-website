@@ -16,6 +16,7 @@
 
             strong {                
                 @include strong-white(3rem);
+
                 @media(max-width: 750px) {
                     font-size: 2rem;
                 }
@@ -35,11 +36,14 @@
 
             @media(max-width: 975px) {
                 flex-wrap: wrap;
-                justify-content: center;
+                justify-content: center;                         
             }
 
-            @media(max-width: 705px) {
-                padding: 0 1rem;
+            // Less wide container
+            @media(max-width: 750px) {
+                width: 80%;
+                margin: 0 auto;
+                padding-top: 3rem;
             }
 
             .do-card {
@@ -50,11 +54,13 @@
                 transition: background .3s ease-in-out;
                 width: 32%;
 
+                // items on 2 lines
                 @media(max-width: 975px) {
                     width: 50%;
                 }
 
-                @media(max-width: 705px) {
+                 // items on 3 lines
+                @media(max-width: 750px) {
                     width: 100%;
                 }
 
@@ -136,9 +142,8 @@
                 flex: 8;
 
                 @media(max-width: 750px) {
-                    padding: 0 1rem;                   
-                    width: 100%;
-                    text-align: center;
+                    padding: 0 1rem;                 
+                    text-align: center;                   
                 }
 
                 strong {

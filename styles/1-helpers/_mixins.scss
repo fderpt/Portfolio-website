@@ -4,11 +4,6 @@
     align-items: center;    
 } 
 
-@mixin container {
-    max-width: $width-container;
-    margin: 0 auto;
-}
-
 @mixin purple-texts {
     color: white;
     background-color: #a8aaf1;

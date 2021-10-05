@@ -25,6 +25,7 @@ footer {
             margin-bottom: 30px;
             align-items: center;
 
+            // Make the container wrap and center the items
             @media(max-width: 975px) {
                 flex-wrap: wrap;
                 justify-content: center;
@@ -36,12 +37,14 @@ footer {
 
                @include social-link(1rem, 55px, 55px, white, white, 1.1);
 
+                // Switch to column, give width to make items wrap
                @media(max-width: 975px) {
                 flex-direction: column;
                 width: 35%;
                 margin: .8rem;
             }
 
+            // Make the card full width
             @media(max-width: 750px) {
                 width: 100%;
                 margin: .8rem;
@@ -88,7 +91,8 @@ footer {
                     align-items: center;
                     justify-content: center;
 
-                    @media(max-width: 750px) {
+
+                   @media(max-width: 750px) {
                         flex-direction: column;
                     }
 
@@ -103,6 +107,7 @@ footer {
                                 color: $clr-navlink2;
                             }
 
+                            // Make the item an inline-block and add padding on the top
                             @media(max-width: 750px) {
                                 display: inline-block;
                                 padding-top: .8rem;

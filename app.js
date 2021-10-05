@@ -67,7 +67,6 @@ var myScrollFunc = function() {
       }
   })
 
-
   // FAQ
   const q1 = document.getElementById('q-text1');
   const q2 = document.getElementById('q-text2');
@@ -78,7 +77,7 @@ var myScrollFunc = function() {
   const q7 = document.getElementById('q-text7');
   const q8 = document.getElementById('q-text8');
   const q9 = document.getElementById('q-text9');
-  const q10 = document.getElementById('q-text10');
+  const q10 = document.getElementById('q-text10');  
 
   const answer1 = document.getElementById('answer1');
   const answer2 = document.getElementById('answer2');
@@ -102,105 +101,88 @@ var myScrollFunc = function() {
   const icon9 = document.getElementById('icon9');
   const icon10 = document.getElementById('icon10');
 
-  q1.addEventListener("click", () => {
-    answer1.classList.toggle("open")
-    answer2.classList.remove("open")
-    answer3.classList.remove("open")
-    answer4.classList.remove("open")
-    answer5.classList.remove("open")  
-    
-    icon1.classList.toggle("open");
-    q1.classList.toggle("open");
+  const questionContainer = document.getElementById('question-container')
+  
+  questionContainer.addEventListener("click", e => {
+    if(e.target.dataset.num === "1") {
+      answer1.classList.toggle("open")
+      answer2.classList.remove("open")
+      answer3.classList.remove("open")
+      answer4.classList.remove("open")
+      answer5.classList.remove("open")    
+      icon1.classList.toggle("open");
+      q1.classList.toggle("open");
+    }
+
+    if(e.target.dataset.num === "2") {
+      answer2.classList.toggle("open")
+      answer1.classList.remove("open")
+      answer3.classList.remove("open")
+      answer4.classList.remove("open")
+      answer5.classList.remove("open")      
+      icon2.classList.toggle("open");
+      q2.classList.toggle("open");
+    }
+
+    if(e.target.dataset.num === "3") {
+      answer3.classList.toggle("open")
+      answer1.classList.remove("open")
+      answer2.classList.remove("open")
+      answer4.classList.remove("open")
+      answer5.classList.remove("open")      
+      icon3.classList.toggle("open");
+      q3.classList.toggle("open");
+    }
+
+    if(e.target.dataset.num === "4") {
+      answer4.classList.toggle("open")
+      answer2.classList.remove("open")
+      answer3.classList.remove("open")
+      answer1.classList.remove("open")
+      answer5.classList.remove("open")    
+      icon4.classList.toggle("open");
+      q4.classList.toggle("open");
+    }
+
+    if(e.target.dataset.num === "5") {
+      answer5.classList.toggle("open")
+      answer2.classList.remove("open")
+      answer3.classList.remove("open")
+      answer4.classList.remove("open")
+      answer1.classList.remove("open")     
+      icon5.classList.toggle("open");
+      q5.classList.toggle("open");
+    }
+
+    if(e.target.dataset.num === "6") {
+      answer6.classList.toggle("open")    
+      icon6.classList.toggle("open");
+      q6.classList.toggle("open");
+    }
+
+    if(e.target.dataset.num === "7") {
+      answer7.classList.toggle("open")    
+      icon7.classList.toggle("open");
+      q7.classList.toggle("open");
+    }
+
+    if(e.target.dataset.num === "8") {
+      answer8.classList.toggle("open")    
+      icon8.classList.toggle("open");
+      q8.classList.toggle("open");
+    }
+
+    if(e.target.dataset.num === "9") {
+      answer9.classList.toggle("open")    
+      icon9.classList.toggle("open");
+      q9.classList.toggle("open");
+    }
+
+    if(e.target.dataset.num === "10") {
+      answer10.classList.toggle("open")    
+      icon10.classList.toggle("open");
+      q10.classList.toggle("open");
+    }
   })
 
-  q2.addEventListener("click", () => {
-    answer2.classList.toggle("open")
-    answer1.classList.remove("open")
-    answer3.classList.remove("open")
-    answer4.classList.remove("open")
-    answer5.classList.remove("open")   
-    
-    icon2.classList.toggle("open");
-    q2.classList.toggle("open");
-  })
-
-  q3.addEventListener("click", () => {
-    answer3.classList.toggle("open")
-    answer1.classList.remove("open")
-    answer2.classList.remove("open")
-    answer4.classList.remove("open")
-    answer5.classList.remove("open")    
-
-    icon3.classList.toggle("open");
-    q3.classList.toggle("open");
-  })
-
-  q4.addEventListener("click", () => {
-    answer4.classList.toggle("open")
-    answer2.classList.remove("open")
-    answer3.classList.remove("open")
-    answer1.classList.remove("open")
-    answer5.classList.remove("open")   
-    
-    icon4.classList.toggle("open");
-    q4.classList.toggle("open");
-  })
-
-  q5.addEventListener("click", () => {
-    answer5.classList.toggle("open")
-    answer2.classList.remove("open")
-    answer3.classList.remove("open")
-    answer4.classList.remove("open")
-    answer1.classList.remove("open")  
-    
-    icon5.classList.toggle("open");
-    q5.classList.toggle("open");
-  })
-
-  q6.addEventListener("click", () => {
-    answer6.classList.toggle("open")    
-    icon6.classList.toggle("open");
-    q6.classList.toggle("open");
-  })
-
-  q7.addEventListener("click", () => {
-    answer7.classList.toggle("open")    
-    icon7.classList.toggle("open");
-    q7.classList.toggle("open");
-  })
-
-  q8.addEventListener("click", () => {
-    answer8.classList.toggle("open")    
-    icon8.classList.toggle("open");
-    q8.classList.toggle("open");
-  })
-
-  q9.addEventListener("click", () => {
-    answer9.classList.toggle("open")    
-    icon9.classList.toggle("open");
-    q9.classList.toggle("open");
-  })
-
-  q10.addEventListener("click", () => {
-    answer10.classList.toggle("open")    
-    icon10.classList.toggle("open");
-    q10.classList.toggle("open");
-  })
-
-// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  const uluru = { lat: -25.344, lng: 131.036 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: uluru,
-  });
-  // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-  });
-}
-
-
+ 

@@ -11,6 +11,7 @@ header {
     transition: all .2s ease-in-out;
     padding: 5px 0;    
 
+    // Shift to mobile menu
     @media(max-width: 1150px) {
         flex-direction: column;
         justify-content: center;
@@ -21,6 +22,7 @@ header {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
         background-color: white;
 
+        // Make the header slightly thinner on scroll
         @media(max-width: 1150px) {
             padding: 0;
             
@@ -46,6 +48,7 @@ header {
         align-items: center;
         transition: all .2s ease-in-out;   
 
+        // Make the top div expand 100%
         @media(max-width: 1150px) {
             width: 100%;
         }
@@ -61,11 +64,11 @@ header {
                 width: 50px;
                 margin: 0 10px 0 3rem;
 
+                // Logo image further to the left
                 @media(max-width: 1150px) {
                     margin: 10px;
                 }
             }
-
         }
 
         .toggle {
@@ -76,10 +79,12 @@ header {
             width: 45px;
             margin-right: 1rem;
           
+            // Only visible in mobile menu
             @media(max-width: 1150px) {
                 display: block;
             }
 
+            // Hamburger menu with cross animation on click
             .middle {                
                 width: 35px;
                 height: 2px;
@@ -161,6 +166,7 @@ header {
         justify-content: space-between;
         transition: all .4s ease;
 
+        // Switch to column and hide height till hambuger menu gets clicked on and adds the "open" class
         @media(max-width: 1150px) {
             flex-direction: column;
             max-height: 0;
@@ -176,8 +182,8 @@ header {
 
         .nav-list {
             list-style: none;
-            @include flex-center;            
-
+            @include flex-center;   
+         
             @media(max-width: 1150px) {
                 flex-direction: column;               
             }
@@ -274,20 +280,18 @@ header {
 
             @include social-link(0 1rem 0 0);  
             
+            //Center the icon with equal margin
             @media(max-width: 1150px) {
                 @include social-link(.4rem);
             }
         }
 
         .quote-button {
-            margin: 0 3rem;
-
-            @media(max-width: 1150px) {
-                margin: 0;
-            }
+            margin: 0 3rem;         
               
             @include button;
 
+            // Center the button with equal margin
             @media(max-width: 1150px) {
                     margin: 2.5rem;
             }            

@@ -90,7 +90,7 @@
                 }
 
                 &:nth-of-type(3) {
-                    
+                    // Media queries to make borders not overlap 
                     @media(max-width: 975px) {
                         border: none;
                         border-bottom: 1px solid lightgray;

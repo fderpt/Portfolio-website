@@ -19,28 +19,24 @@
             justify-content: space-evenly;
 
             @media(max-width: 975px) {
-                flex-wrap: wrap;  
-                width: 90%;
-                       
+                flex-wrap: wrap;                       
             }            
 
             .pricing-table {
                 border: 1px solid lightgray;
                 border-radius: 11px;
                 padding: 2rem;
+                width: 30%;               
 
-                @media(max-width: 1200px) {
-                    width: 30%;         
-                }
-
+                //  Wrap items on 2 lines
                 @media(max-width: 975px) {
                     width: 45%;  
-                    margin: 1rem;                                   
+                    margin: 1rem;                                                       
                 }
 
+                //  Wrap items on 3 lines
                 @media(max-width: 750px) {
-                    width: 65%;  
-                                                    
+                    width: 65%;                                                                        
                 }
 
                 img {

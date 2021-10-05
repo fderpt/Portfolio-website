@@ -3,8 +3,8 @@
     padding: 200px 0 100px;
 
     .hero-container {
-        @include flex-container;     
-
+        @include flex-container; 
+        
         @media(max-width: 975px) {
             flex-direction: column;            
         }

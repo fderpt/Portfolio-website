@@ -569,12 +569,6 @@ header .menu .social-quote .quote-button {
   margin: 0 3rem;
 }
 
-@media (max-width: 1150px) {
-  header .menu .social-quote .quote-button {
-    margin: 0;
-  }
-}
-
 header .menu .social-quote .quote-button a {
   text-decoration: none;
   font-size: 16px;
@@ -872,9 +866,11 @@ header .menu .social-quote .quote-button a.orange:after {
   }
 }
 
-@media (max-width: 705px) {
+@media (max-width: 750px) {
   .what-we-do .what-we-do-container .do-cards-container {
-    padding: 0 1rem;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3rem;
   }
 }
 
@@ -905,7 +901,7 @@ header .menu .social-quote .quote-button a.orange:after {
   }
 }
 
-@media (max-width: 705px) {
+@media (max-width: 750px) {
   .what-we-do .what-we-do-container .do-cards-container .do-card {
     width: 100%;
   }
@@ -1069,7 +1065,6 @@ header .menu .social-quote .quote-button a.orange:after {
 @media (max-width: 750px) {
   .what-we-do .what-we-do-container .consultation .consultation-texts {
     padding: 0 1rem;
-    width: 100%;
     text-align: center;
   }
 }
@@ -1640,7 +1635,6 @@ header .menu .social-quote .quote-button a.orange:after {
 
 @media (max-width: 750px) {
   .philosophy .philosophy-container .philosophy-texts .texts-container .texts-links {
-    width: 100%;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -1716,12 +1710,6 @@ header .menu .social-quote .quote-button a.orange:after {
   width: 90%;
   margin-bottom: 1.6rem;
   text-align: start;
-}
-
-@media (max-width: 1060px) {
-  .philosophy .philosophy-container .philosophy-texts .texts-container .philosophy-texts p {
-    margin-left: 1rem;
-  }
 }
 
 .philosophy .philosophy-container .philosophy-texts .texts-container .philosophy-texts:nth-of-type(2), .philosophy .philosophy-container .philosophy-texts .texts-container .philosophy-texts:nth-of-type(3) {
@@ -1876,7 +1864,6 @@ header .menu .social-quote .quote-button a.orange:after {
   .pricing .pricing-container .pricing-tables {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 90%;
   }
 }
 
@@ -1884,12 +1871,7 @@ header .menu .social-quote .quote-button a.orange:after {
   border: 1px solid lightgray;
   border-radius: 11px;
   padding: 2rem;
-}
-
-@media (max-width: 1200px) {
-  .pricing .pricing-container .pricing-tables .pricing-table {
-    width: 30%;
-  }
+  width: 30%;
 }
 
 @media (max-width: 975px) {
@@ -2109,12 +2091,12 @@ header .menu .social-quote .quote-button a.orange:after {
   }
 }
 
-.team .team-container .team-card:nth-of-type(2), .team .team-container .team-card:nth-of-type(4), .team .team-container .team-card:nth-of-type(6) {
+.team .team-container .team-card:nth-child(even) {
   margin-top: 3rem;
 }
 
 @media (max-width: 735px) {
-  .team .team-container .team-card:nth-of-type(2), .team .team-container .team-card:nth-of-type(4), .team .team-container .team-card:nth-of-type(6) {
+  .team .team-container .team-card:nth-child(even) {
     margin-top: 0;
   }
 }
@@ -2297,9 +2279,16 @@ header .menu .social-quote .quote-button a.orange:after {
 }
 
 .help .help-container {
-  max-width: 1160px;
+  width: 90%;
+  max-width: 1100px;
   margin: 0 auto;
-  max-width: 1280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .help .help-container .help-texts {
@@ -2365,15 +2354,13 @@ header .menu .social-quote .quote-button a.orange:after {
   -ms-grid-rows: min-content;
       grid-template-rows: -webkit-min-content;
       grid-template-rows: min-content;
-  max-width: 1280px;
-  margin: 30px 0 70px 0;
+  margin: 30px auto 70px auto;
 }
 
-@media (max-width: 975px) {
+@media (max-width: 1080px) {
   .help .help-container .question-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    max-width: 720px;
     margin: 30px auto 70px auto;
   }
 }
@@ -2399,7 +2386,7 @@ header .menu .social-quote .quote-button a.orange:after {
           justify-content: flex-start;
 }
 
-@media (max-width: 975px) {
+@media (max-width: 1080px) {
   .help .help-container .question-container .question-container-1,
   .help .help-container .question-container .question-container-2 {
     margin-top: 0;
@@ -2422,7 +2409,6 @@ header .menu .social-quote .quote-button a.orange:after {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-right: 2rem;
   background-color: #f7f4f4;
   padding: .7rem 1.8rem;
   border-radius: 20px;
@@ -2431,13 +2417,6 @@ header .menu .social-quote .quote-button a.orange:after {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   margin-bottom: .8rem;
-}
-
-@media (max-width: 975px) {
-  .help .help-container .question-container .question-container-1 .question .question-text,
-  .help .help-container .question-container .question-container-2 .question .question-text {
-    margin-right: 0;
-  }
 }
 
 .help .help-container .question-container .question-container-1 .question .question-text:after,
