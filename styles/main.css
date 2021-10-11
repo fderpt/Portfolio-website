@@ -628,7 +628,14 @@ header .menu .social-quote .quote-button a.orange:after {
 
 .hero {
   background-color: #f8f8f8;
-  padding: 200px 0 100px;
+  padding-top: clamp(200px, 5vw, 300px);
+  padding-bottom: clamp(100px, 5vw, 200px);
+}
+
+@media (max-width: 1150px) {
+  .hero {
+    padding-top: clamp(120px, 1vw, 150px);
+  }
 }
 
 .hero .hero-container {
@@ -690,20 +697,14 @@ header .menu .social-quote .quote-button a.orange:after {
 .hero .hero-container .hero-text strong {
   font-weight: bold;
   font-family: "MuseoModerno", cursive;
-  font-size: 4.5rem;
+  font-size: clamp(2rem, 5vw, 5.5rem);
   display: block;
-}
-
-@media (max-width: 750px) {
-  .hero .hero-container .hero-text strong {
-    font-size: clamp(2rem, 2.5rem, 3rem);
-  }
 }
 
 .hero .hero-container .hero-text p {
   color: #616161;
   font-family: "Jost", sans-serif;
-  font-size: 1.3rem;
+  font-size: clamp(0.8rem, 4vw, 1.5rem);
   font-weight: 400;
   width: 70%;
   margin-bottom: 4rem;
@@ -784,6 +785,12 @@ header .menu .social-quote .quote-button a.orange:after {
           flex-direction: column;
 }
 
+@media (max-width: 750px) {
+  .what-we-do .what-we-do-container {
+    width: 60%;
+  }
+}
+
 .what-we-do .what-we-do-container .what-we-do-texts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -816,28 +823,28 @@ header .menu .social-quote .quote-button a.orange:after {
   font-weight: bold;
   color: #fff;
   font-family: "MuseoModerno", cursive;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 5rem);
 }
 
 @media (max-width: 750px) {
   .what-we-do .what-we-do-container .what-we-do-texts strong {
-    font-size: clamp(2rem, 2.5rem, 3rem);
-  }
-}
-
-@media (max-width: 750px) {
-  .what-we-do .what-we-do-container .what-we-do-texts strong {
-    font-size: 2rem;
+    text-align: center;
   }
 }
 
 .what-we-do .what-we-do-container .what-we-do-texts p {
   color: #bbbbbb;
   font-family: "Jost", sans-serif;
-  font-size: 1.3rem;
+  font-size: clamp(0.8rem, 4vw, 1.5rem);
   font-weight: 400;
   width: 70%;
   text-align: center;
+}
+
+@media (max-width: 750px) {
+  .what-we-do .what-we-do-container .what-we-do-texts p {
+    width: 100%;
+  }
 }
 
 .what-we-do .what-we-do-container .do-cards-container {
@@ -854,6 +861,10 @@ header .menu .social-quote .quote-button a.orange:after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 1.5rem;
+  row-gap: 1rem;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
 }
 
 @media (max-width: 975px) {
@@ -863,14 +874,6 @@ header .menu .social-quote .quote-button a.orange:after {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-
-@media (max-width: 750px) {
-  .what-we-do .what-we-do-container .do-cards-container {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 3rem;
   }
 }
 
@@ -897,7 +900,7 @@ header .menu .social-quote .quote-button a.orange:after {
 
 @media (max-width: 975px) {
   .what-we-do .what-we-do-container .do-cards-container .do-card {
-    width: 50%;
+    width: 48%;
   }
 }
 
@@ -1073,19 +1076,14 @@ header .menu .social-quote .quote-button a.orange:after {
   font-weight: bold;
   color: #fff;
   font-family: "MuseoModerno", cursive;
-  font-size: 3rem;
-}
-
-@media (max-width: 750px) {
-  .what-we-do .what-we-do-container .consultation .consultation-texts strong {
-    font-size: clamp(2rem, 2.5rem, 3rem);
-  }
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 1rem;
 }
 
 .what-we-do .what-we-do-container .consultation .consultation-texts p {
   color: white;
   font-family: "Jost", sans-serif;
-  font-size: 1.3rem;
+  font-size: clamp(0.8rem, 4vw, 1.5rem);
   font-weight: 400;
 }
 
@@ -1209,20 +1207,14 @@ header .menu .social-quote .quote-button a.orange:after {
 .services .services-container .services-texts strong {
   font-weight: bold;
   font-family: "MuseoModerno", cursive;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 5rem);
   display: block;
-}
-
-@media (max-width: 750px) {
-  .services .services-container .services-texts strong {
-    font-size: clamp(2rem, 2.5rem, 3rem);
-  }
 }
 
 .services .services-container .services-texts p {
   color: #777d74;
   font-family: "Jost", sans-serif;
-  font-size: 1.3rem;
+  font-size: clamp(0.8rem, 4vw, 1.5rem);
   font-weight: 400;
   margin: 1rem 0;
 }
@@ -1487,20 +1479,14 @@ header .menu .social-quote .quote-button a.orange:after {
   font-weight: bold;
   color: #fff;
   font-family: "MuseoModerno", cursive;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 5rem);
   display: block;
-}
-
-@media (max-width: 750px) {
-  .features .services-features strong {
-    font-size: clamp(2rem, 2.5rem, 3rem);
-  }
 }
 
 .features .services-features p {
   color: #c8c8c8;
   font-family: "Jost", sans-serif;
-  font-size: 1.3rem;
+  font-size: clamp(0.8rem, 4vw, 1.5rem);
   font-weight: 400;
   margin-bottom: 2rem;
 }
@@ -1598,16 +1584,9 @@ header .menu .social-quote .quote-button a.orange:after {
 .philosophy .philosophy-container .philosophy-texts strong {
   font-weight: bold;
   font-family: "MuseoModerno", cursive;
-  font-size: 4.5rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   display: block;
-  font-size: 3rem;
   margin-top: .6rem;
-}
-
-@media (max-width: 750px) {
-  .philosophy .philosophy-container .philosophy-texts strong {
-    font-size: clamp(2rem, 2.5rem, 3rem);
-  }
 }
 
 .philosophy .philosophy-container .philosophy-texts .texts-container .texts-links {
@@ -1644,7 +1623,7 @@ header .menu .social-quote .quote-button a.orange:after {
 .philosophy .philosophy-container .philosophy-texts .texts-container .texts-links .text-link {
   color: #42424c;
   font-family: "Jost", sans-serif;
-  font-size: 1.3rem;
+  font-size: clamp(0.8rem, 4vw, 1.5rem);
   font-weight: 400;
   cursor: pointer;
   margin: 0;
@@ -1705,7 +1684,7 @@ header .menu .social-quote .quote-button a.orange:after {
 .philosophy .philosophy-container .philosophy-texts .texts-container .philosophy-texts p {
   color: #42424c;
   font-family: "Jost", sans-serif;
-  font-size: 1.3rem;
+  font-size: clamp(0.8rem, 4vw, 1.5rem);
   font-weight: 400;
   width: 90%;
   margin-bottom: 1.6rem;
@@ -1828,15 +1807,9 @@ header .menu .social-quote .quote-button a.orange:after {
 .pricing .pricing-container strong {
   font-weight: bold;
   font-family: "MuseoModerno", cursive;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 5rem);
   display: block;
   margin-bottom: 1.5rem;
-}
-
-@media (max-width: 750px) {
-  .pricing .pricing-container strong {
-    font-size: clamp(2rem, 2.5rem, 3rem);
-  }
 }
 
 @media (max-width: 975px) {
@@ -2018,14 +1991,8 @@ header .menu .social-quote .quote-button a.orange:after {
 .team .team-text strong {
   font-weight: bold;
   font-family: "MuseoModerno", cursive;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 5rem);
   display: block;
-}
-
-@media (max-width: 750px) {
-  .team .team-text strong {
-    font-size: clamp(2rem, 2.5rem, 3rem);
-  }
 }
 
 @media (max-width: 750px) {
@@ -2037,7 +2004,7 @@ header .menu .social-quote .quote-button a.orange:after {
 .team .team-text p {
   color: #777d74;
   font-family: "Jost", sans-serif;
-  font-size: 1.3rem;
+  font-size: clamp(0.8rem, 4vw, 1.5rem);
   font-weight: 400;
   width: 55%;
   text-align: center;
@@ -2181,7 +2148,7 @@ header .menu .social-quote .quote-button a.orange:after {
 .team .team-container .team-card p {
   color: #333333;
   font-family: "Jost", sans-serif;
-  font-size: 1.3rem;
+  font-size: clamp(0.8rem, 4vw, 1.5rem);
   font-weight: 400;
   font-size: 1rem;
   margin-bottom: 1.4rem;
@@ -2316,19 +2283,14 @@ header .menu .social-quote .quote-button a.orange:after {
   font-size: 1rem;
   font-family: "Jost", sans-serif;
   font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 .help .help-container .help-texts strong {
   font-weight: bold;
   font-family: "MuseoModerno", cursive;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 5rem);
   display: block;
-}
-
-@media (max-width: 750px) {
-  .help .help-container .help-texts strong {
-    font-size: clamp(2rem, 2.5rem, 3rem);
-  }
 }
 
 @media (max-width: 565px) {
@@ -2340,7 +2302,7 @@ header .menu .social-quote .quote-button a.orange:after {
 .help .help-container .help-texts .help-paragraph {
   color: #777d74;
   font-family: "Jost", sans-serif;
-  font-size: 1.3rem;
+  font-size: clamp(0.8rem, 4vw, 1.5rem);
   font-weight: 400;
   width: 55%;
   text-align: center;
@@ -2498,7 +2460,7 @@ header .menu .social-quote .quote-button a.orange:after {
 .help .help-container .question-container .question-container-2 .question .answer {
   color: #333333;
   font-family: "Jost", sans-serif;
-  font-size: 1.3rem;
+  font-size: clamp(0.8rem, 4vw, 1.5rem);
   font-weight: 400;
   margin-right: 2rem;
   width: 85%;
@@ -2538,14 +2500,8 @@ header .menu .social-quote .quote-button a.orange:after {
 .contact .contact-container strong {
   font-weight: bold;
   font-family: "MuseoModerno", cursive;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   display: block;
-}
-
-@media (max-width: 750px) {
-  .contact .contact-container strong {
-    font-size: clamp(2rem, 2.5rem, 3rem);
-  }
 }
 
 .contact .contact-container form {
@@ -2577,7 +2533,7 @@ header .menu .social-quote .quote-button a.orange:after {
   border: none;
   color: black;
   font-family: "Jost", sans-serif;
-  font-size: 1.3rem;
+  font-size: clamp(0.8rem, 4vw, 1.5rem);
   font-weight: 400;
 }
 
@@ -2718,12 +2674,6 @@ footer .footer-container strong {
   margin-bottom: 3rem;
 }
 
-@media (max-width: 750px) {
-  footer .footer-container strong {
-    font-size: clamp(2rem, 2.5rem, 3rem);
-  }
-}
-
 footer .footer-container .footer-contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2838,7 +2788,7 @@ footer .footer-container .footer-contact .contact-card a:hover i::after {
 footer .footer-container .footer-contact .contact-card .contact-card-text {
   color: white;
   font-family: "Jost", sans-serif;
-  font-size: 1.3rem;
+  font-size: clamp(0.8rem, 4vw, 1.5rem);
   font-weight: 400;
   margin-left: 1rem;
 }
@@ -2907,7 +2857,7 @@ footer .footer-container .footer-nav nav .footer-navlist {
 footer .footer-container .footer-nav nav .footer-navlist li a {
   color: white;
   font-family: "Jost", sans-serif;
-  font-size: 1.3rem;
+  font-size: clamp(0.8rem, 4vw, 1.5rem);
   font-weight: 400;
   text-decoration: none;
   margin: 0 1.4rem;

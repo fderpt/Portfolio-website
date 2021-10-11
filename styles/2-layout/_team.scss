@@ -14,7 +14,7 @@
         }
 
         strong {
-            @include strong-black(3rem);
+            @include strong-black;
                         
             @media(max-width: 750px) {
                 margin: 1rem 0;              

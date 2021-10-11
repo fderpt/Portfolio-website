@@ -9,7 +9,7 @@
       flex-direction: column;
 
       strong {
-        @include strong-black(3rem);
+        @include strong-black(clamp(2rem, 5vw, 3rem));
       }
 
       form {

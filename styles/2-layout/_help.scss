@@ -13,10 +13,11 @@
             h5 {
 
                 @include purple-texts2;
+                margin-bottom: 1rem;
             }
     
             strong {
-                @include strong-black(3rem);
+                @include strong-black;
 
                 @media(max-width: 565px) {
                     text-align: center;

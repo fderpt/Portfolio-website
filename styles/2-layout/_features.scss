@@ -47,7 +47,7 @@
         }
 
         strong {
-            @include strong-white(3rem);
+            @include strong-white;
             display: block;
         }
 

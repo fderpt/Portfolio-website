@@ -29,8 +29,7 @@
             }
 
             strong {
-                @include strong-black;
-                font-size: 3rem;
+                @include strong-black(clamp(2rem, 5vw, 3rem));                
                 margin-top: .6rem;    
             }
 

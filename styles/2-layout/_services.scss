@@ -9,11 +9,11 @@
 
             h5 {
                @include purple-texts2;
-               margin-top: 80px
+               margin-top: 80px;
             }
 
             strong {
-                @include strong-black(3rem)
+                @include strong-black;
             }
 
             p {

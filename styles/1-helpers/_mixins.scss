@@ -27,29 +27,21 @@
     font-weight: 400;
 }
 
-@mixin strong-black($font-size: 4.5rem) {
+@mixin strong-black($font-size: clamp(2rem, 5vw, 5rem)) {
     font-weight: bold;
     font-family: $secondary-font;
     font-size: $font-size;       
-    display: block;  
-    
-    @media(max-width: 750px) {                         
-        font-size: clamp(2rem, 2.5rem, 3rem)
-    }
+    display: block;     
 }
 
-@mixin strong-white($font-size: 4.5rem) {
+@mixin strong-white($font-size: clamp(2rem, 5vw, 5rem)) {
     font-weight: bold;
     color: #fff;
     font-family: $secondary-font;
-    font-size: $font-size;  
-    
-    @media(max-width: 750px) {                         
-        font-size: clamp(2rem, 2.5rem, 3rem)
-    }
+    font-size: $font-size;    
 }
 
-@mixin paragraph($color: black, $font-size: 1.3rem) {
+@mixin paragraph($color: black, $font-size: clamp(.8rem, 4vw, 1.5rem)) {
     color: $color;
     font-family: $primary-font;
     font-size: $font-size;

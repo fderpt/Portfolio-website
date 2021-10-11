@@ -1,12 +1,17 @@
 .hero {   
     background-color: $clr-bg-primary;
-    padding: 200px 0 100px;
+    padding-top: clamp(200px, 5vw, 300px);
+    padding-bottom: clamp(100px, 5vw, 200px);
+
+    @media(max-width: 1150px) {
+        padding-top: clamp(120px, 1vw, 150px);   
+    }
 
     .hero-container {
-        @include flex-container; 
-        
+        @include flex-container;
+
         @media(max-width: 975px) {
-            flex-direction: column;            
+            flex-direction: column;                  
         }
 
         @media(max-width: 750px) {
@@ -39,11 +44,11 @@
             }
 
             strong {
-              @include strong-black;                
+              @include strong-black(clamp(2rem, 5vw, 5.5rem))                
             }
 
             p {
-                @include paragraph(#616161);
+                @include paragraph(#616161, clamp(.8rem, 4vw, 1.5rem));
                 width: 70%;
                 margin-bottom: 4rem;
 
